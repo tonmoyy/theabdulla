@@ -10,7 +10,7 @@ const investmentPhilosophy = [
     }
 ];
 
-const Pricing = () => {
+const InvestmentPhilosophy = () => {
     return (
         <Section className="overflow-hidden" id="pricing">
             <div className="container relative z-2">
@@ -28,7 +28,11 @@ const Pricing = () => {
                         {investmentPhilosophy.map((item, i) => (
                             <div key={i}>
                                 <h1 className="h4 mb-4">{item.title}</h1>
-                                <p className="h4 mb-4">{item.features} </p>
+                                {item.features.map((feature, index) => (
+                                    <li key={index} className="flex items-start py-5 border-b border-n-6">
+                                        <p className="body-2 ml-4">{feature}</p>
+                                    </li>
+                                ))}
                             </div>
                         ))}
                     </div>
@@ -46,4 +50,4 @@ const Pricing = () => {
     );
 };
 
-export default Pricing;
+export default InvestmentPhilosophy ;
