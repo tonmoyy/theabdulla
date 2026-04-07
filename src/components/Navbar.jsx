@@ -1,7 +1,8 @@
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
-import { background, openai } from "../assets";
+import { background, logoabdulla} from "../assets";
+
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { useState } from "react";
@@ -30,7 +31,7 @@ const navigation = [
     {
         id: "4",
         title: "Partnerships",
-        url: "#signup",
+        url: "#partnerships",
 
     },
     {
@@ -65,7 +66,7 @@ const Header = () => {
         <div className={`fixed top-0 left-0 w-full z-50  border-b border-n-6 lg:bg-n-8/90 lg:backdrop-blur-sm ${openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"}`}>
             <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
                 <a className="block w-[12rem] xl:mr-8" href="#hero">
-                      <img src={openai} width={190} height={40} alt="OpenAI" />
+                      <img src={logoabdulla} width={190} height={140}  className="rounded-full " alt="logoAbdulla" />
                 </a>
 
                 <nav className={`${openNavigation ? "flex" : "hidden"} fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}>
@@ -103,12 +104,12 @@ const Header = () => {
                     </div>
                 </nav>
 
-                <a href="#signup" className="button hidden mr-8 text-white/50 transition-colors hover:text-white lg:block">
-                    New account
-                </a>
-                <Button className="hidden lg:flex" href="#login">
-                    Sign in
-                </Button>
+                {/*<a href="#signup" className="button hidden mr-8 text-white/50 transition-colors hover:text-white lg:block">*/}
+                {/*    New account*/}
+                {/*</a>*/}
+                {/*<Button className="hidden lg:flex" href="#login">*/}
+                {/*    Sign in*/}
+                {/*</Button>*/}
 
                 <Button className="ml-auto lg:hidden" onClick={toggleNavigation}>
                     <MenuSvg openNavigation={openNavigation} />

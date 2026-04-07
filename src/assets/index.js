@@ -3,7 +3,7 @@ export { default as curve } from './hero/curve.png';
 export { default as robot } from './hero/robot.jpeg';
 export { default as heroBackground } from './hero/hero-background.jpg';
 
-// Collaboration Section
+// Partnerships Section
 export { default as curve1 } from './collaboration/curve-1.svg';
 export { default as curve2 } from './collaboration/curve-2.svg';
 export { default as discord } from './collaboration/discord.png';
@@ -15,7 +15,7 @@ export { default as protopie } from './collaboration/protopie.png';
 export { default as raindrop } from './collaboration/raindrop.png';
 export { default as slack } from './collaboration/slack.png';
 
-// Services Section
+// CorePillars Section
 export { default as service1 } from './services/service-1.jpeg';
 export { default as service2 } from './services/service-2.jpeg';
 export { default as service3 } from './services/service-2.jpeg';
@@ -61,7 +61,7 @@ export { default as telegram } from './socials/telegram.svg';
 export { default as twitter } from './socials/twitter.svg';
 
 // General Imports
-export { default as openai } from './openai.svg';
+export { default as logoabdulla } from './logoabdulla.jpg';
 export { default as check } from './check.svg';
 export { default as check2 } from './check-02.svg';
 export { default as loading1 } from './loading-01.svg';

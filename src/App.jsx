@@ -1,11 +1,11 @@
-import Benefits from "./sections/Benefits";
-import Collaboration from "./sections/Collaboration";
+import Benefits from "./sections/About.jsx";
+import Partnerships from "./sections/Partnerships.jsx";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Hero from "./sections/Hero";
 import Pricing from "./sections/Pricing";
 import Roadmap from "./sections/Roadmap";
-import Services from "./sections/Services";
+import CorePillars from "./sections/CorePillars.jsx";
 import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
@@ -16,8 +16,8 @@ const App = () => {
                     <Navbar />
                    <Hero />
                    <Benefits />
-                   <Collaboration />
-                   <Services />
+                   <Partnerships />
+                   <CorePillars />
                    <Pricing />
                    <Roadmap />
                    <Footer />

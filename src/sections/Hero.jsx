@@ -1,13 +1,7 @@
 import {
   curve,
-  file02,
   heroBackground,
-  homeSmile,
-  loading,
-  plusSquare,
   robot,
-  searchMd,
-  yourlogo,
 } from "../assets";
 import Button from "../components/Button";
 import Section from "../components/Section";
@@ -101,9 +95,6 @@ const Hero = () => {
             The Abdulla Capital is a private capital platform operating across
             investment stewardship, strategic advisory, and equity partnerships.
           </p>
-          <Button href="#pricing" white>
-            Get started
-          </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">
@@ -119,34 +110,29 @@ const Hero = () => {
                   alt=""
                 />
 
-                <div className="flex items-center h-[3.5rem] px-6 bg-n-8/80 rounded-[1.7rem] absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2 text-base">
-                  <img className="w-5 h-5 mr-4" src={loading} alt="" />
-                  AI is generating
-                </div>
+                {/*<ScrollParallax isAbsolutelyPositioned>*/}
+                {/*  <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-[#474060]/40 backdrop-blur border border-white/10 rounded-2xl xl:flex">*/}
+                {/*    <li className="p-5">*/}
+                {/*      <img src={homeSmile} width={24} height={25} alt="" />*/}
+                {/*    </li>*/}
+                {/*    <li className="p-5">*/}
+                {/*      <img src={file02} width={24} height={25} alt="" />*/}
+                {/*    </li>*/}
+                {/*    <li className="p-5">*/}
+                {/*      <img src={searchMd} width={24} height={25} alt="" />*/}
+                {/*    </li>*/}
+                {/*    <li className="p-5">*/}
+                {/*      <img src={plusSquare} width={24} height={25} alt="" />*/}
+                {/*    </li>*/}
+                {/*  </ul>*/}
+                {/*</ScrollParallax>*/}
 
-                <ScrollParallax isAbsolutelyPositioned>
-                  <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-[#474060]/40 backdrop-blur border border-white/10 rounded-2xl xl:flex">
-                    <li className="p-5">
-                      <img src={homeSmile} width={24} height={25} alt="" />
-                    </li>
-                    <li className="p-5">
-                      <img src={file02} width={24} height={25} alt="" />
-                    </li>
-                    <li className="p-5">
-                      <img src={searchMd} width={24} height={25} alt="" />
-                    </li>
-                    <li className="p-5">
-                      <img src={plusSquare} width={24} height={25} alt="" />
-                    </li>
-                  </ul>
-                </ScrollParallax>
-
-                <ScrollParallax isAbsolutelyPositioned>
-                  <Notification
-                    className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
-                    title="Code generation"
-                  />
-                </ScrollParallax>
+                {/*<ScrollParallax isAbsolutelyPositioned>*/}
+                {/*  <Notification*/}
+                {/*    className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"*/}
+                {/*    title="Code generation"*/}
+                {/*  />*/}
+                {/*</ScrollParallax>*/}
               </div>
             </div>
 
@@ -166,25 +152,6 @@ const Hero = () => {
           <BackgroundCircles />
         </div>
 
-        <div className="hidden relative z-10 mt-20 lg:block">
-          <h5 className="tagline mb-6 text-center text-white/50">
-            Helping people create beautiful content at
-          </h5>
-          <ul className="flex">
-            <li className="flex items-center justify-center flex-1 h-[8.5rem]">
-              <img src={yourlogo} width={134} height={28} alt="" />
-            </li>
-            <li className="flex items-center justify-center flex-1 h-[8.5rem]">
-              <img src={yourlogo} width={134} height={28} alt="" />
-            </li>
-            <li className="flex items-center justify-center flex-1 h-[8.5rem]">
-              <img src={yourlogo} width={134} height={28} alt="" />
-            </li>
-            <li className="flex items-center justify-center flex-1 h-[8.5rem]">
-              <img src={yourlogo} width={134} height={28} alt="" />
-            </li>
-          </ul>
-        </div>
       </div>
 
       <div className="hidden absolute top-[55.25rem] left-10 right-10 h-0.25 bg-n-6 pointer-events-none xl:block" />

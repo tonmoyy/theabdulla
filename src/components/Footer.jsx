@@ -30,10 +30,34 @@ const socials = [
         url: "#",
     },
 ];
+const extraPages = [
+    {
+        title: "Governance",
+        url: "#",
+    },
+    {
+        title: "Disclaimer",
+        url: "#",
+    },
+    {
+        title: "Privacy Policy",
+        url: "#",
+    }
+];
 
 const Footer = () => {
     return (
         <Section crosses className="!px-0 !py-10">
+            <div className="container w-full">
+
+                <ul className="flex gap-80 p-10">
+                    {extraPages.map((item, i) => (
+                        <a key={i} href={item.url}  className="content-around text-amber-400 border-4 ">
+                            {item.title}
+                        </a>
+                    ))}
+                </ul>
+            </div>
             <div className="container flex sm:justify-between justify-center items-center gap-10 max-sm:flex-col">
                 <p className="caption text-n-4 lg:block">© {new Date().getFullYear()}. All rights reserved.</p>
 
@@ -45,6 +69,7 @@ const Footer = () => {
                     ))}
                 </ul>
             </div>
+
         </Section>
     );
 };
