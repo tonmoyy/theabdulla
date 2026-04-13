@@ -1,9 +1,8 @@
 import { Logo3 } from "../assets";
-import {business1} from '../assets';
-import {useState} from "react";
+import { business1 } from "../assets";
+import { useState } from "react";
 
 const Navbar = () => {
-
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -11,11 +10,18 @@ const Navbar = () => {
   };
 
   const containerStyle = {
-    right: 'clamp(7.5rem, 4.46203rem + 6.3291vw, 10rem)',
-    position: 'absolute', // Standard for hero decorative lines
+    right: "clamp(7.5rem, 4.46203rem + 6.3291vw, 10rem)",
+    position: "absolute", // Standard for hero decorative lines
+  };
+  const headerStyle = {
+    translate: "none",
+    rotate: "none",
+    scale: "none",
+    opacity: 1,
+    transform: "translate(0px, 0px)",
   };
 
-    return (
+  return (
     <div>
       {/* Mirrored from www.TheAbdullaCapital.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 Apr 2026 15:05:00 GMT */}
       {/* Added by HTTrack */}
@@ -155,7 +161,6 @@ const Navbar = () => {
         title="RSD"
         href="xmlrpc0db0.html?rsd"
       />
-
       <link rel="shortlink" href="index.html" />
       {/* Google Tag Manager for WordPress by gtm4wp.com */}
       {/* GTM Container placement set to automatic */}
@@ -526,16 +531,19 @@ const Navbar = () => {
             {/* */}
             {/*>*/}
 
-              <button className=" gm-header__open-menu js-open-menu" onClick={toggleMenu}>
-                {isOpen ? '✕' : '☰'}
-              </button>
+            <button
+              className=" gm-header__open-menu js-open-menu"
+              onClick={toggleMenu}
+            >
+              {isOpen ? "✕" : "☰"}
+            </button>
             {/*  <span style={{ display: "none" }}>open-menu</span>*/}
             {/*  <span />*/}
             {/*</button>*/}
           </div>
         </div>
-         <div className={`${isOpen ? 'open' : 'hidden'} `}>
-           {/*"gm-mobile-header"*/}
+        <div className={`${isOpen ? "open" : "hidden"} `}>
+          {/*"gm-mobile-header"*/}
           <div className="gm-container-wide">
             <ul id="menu-header-menu-1" className="gm-mobile-header__menu">
               <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40 ">
@@ -673,7 +681,7 @@ const Navbar = () => {
                 </a>
               </li>
             </ul>
-            <div className="gm-mobile-header__info " >
+            <div className="gm-mobile-header__info ">
               <a
                 className="gm-btn gm-btn_blue gm-btn_min"
                 href="contact-us/index.html"
@@ -740,13 +748,31 @@ const Navbar = () => {
       </header>
       <main id="gm-main" className="main-wrapper">
         <section
-            id="gm-home-page-hero-block_844d7ab1cb949749438679af64370224"
-            className="gm-home-page-hero align-full gm-section-element"
+          id="gm-home-page-hero-block_844d7ab1cb949749438679af64370224"
+          className="gm-home-page-hero align-full gm-section-element"
         >
           <div className="gm-container-wide js-container">
             <div className="gm-home-page-hero__title">
-              <h1>
-                An <em>unwavering focus</em> on wealth and investment management
+              <h1 style={headerStyle}>
+                <span
+                  style={{ position: "relative", display: "inline-block" }}
+                  className="gm-home-page-hero__title-word gm-home-page-hero__title-word_1"
+                >
+                  An
+                </span>{" "}
+                <span
+                  style={{ position: "relative", display: "inline-block" }}
+                  className="gm-home-page-hero__title-word gm-home-page-hero__title-word_2"
+                >
+                  <em>unwavering focus</em>
+                </span>{" "}
+                <span
+                  style={{ position: "relative", display: "inline-block" }}
+                  className="gm-home-page-hero__title-word gm-home-page-hero__title-word_1"
+                >
+                  on
+                </span>{" "}
+                wealth and investment management
               </h1>
             </div>
             <div className="gm-home-page-hero__description">
@@ -759,27 +785,25 @@ const Navbar = () => {
           </div>
           <div className="gm-home-page-hero__media">
             <img
-                fetchPriority="high"
-                decoding="async"
-                width={2048}
-                height={1712}
-                src={business1}
-
+              fetchPriority="high"
+              decoding="async"
+              width={2048}
+              height={1712}
+              src={business1}
             />{" "}
           </div>
           <div className="gm-home-page-hero__lines" style={containerStyle}>
-            <div className="ln1" style={{ width: '100%' }}></div>
-            <div className="ln2" style={{ height: '100%' }}></div>
-            <div className="ln3" style={{ width: '100%' }}></div>
-            <div className="ln4" style={{ height: '100%' }}></div>
+            <div className="ln1" style={{ width: "100%" }}></div>
+            <div className="ln2" style={{ height: "100%" }}></div>
+            <div className="ln3" style={{ width: "100%" }}></div>
+            <div className="ln4" style={{ height: "100%" }}></div>
           </div>
         </section>
         <section
-            id="gm-flexible-small-image-content-block_39347a86ddcd341afac95ff5a57bf6b6"
-            className="gm-flexible-small-image-content align-full gm-section-element gm-flexible-small-image-content_bg-sand-text-deepgrey-cta-drkblu"
+          id="gm-flexible-small-image-content-block_39347a86ddcd341afac95ff5a57bf6b6"
+          className="gm-flexible-small-image-content align-full gm-section-element gm-flexible-small-image-content_bg-sand-text-deepgrey-cta-drkblu"
         >
-          <div
-              className="gm-flexible-small-image-content__container gm-flexible-small-image-content__container_text-right">
+          <div className="gm-flexible-small-image-content__container gm-flexible-small-image-content__container_text-right">
             <div className="gm-flexible-small-image-content__image">
               <img
                 decoding="async"
@@ -1464,7 +1488,7 @@ const Navbar = () => {
                   data-number="50.1"
                   data-suffix="B"
                 ></div>
-                <div className="gm-stats__item-description">AUM </div>
+                <div className="gm-stats__item-description">AUM</div>
               </div>
               <div className="gm-stats__item" style={{}}>
                 <div
@@ -1480,7 +1504,7 @@ const Navbar = () => {
                   States in which Clients Are Served{" "}
                 </div>
               </div>
-              <div className="gm-stats__as-of">As of 12/31/2025 </div>
+              <div className="gm-stats__as-of">As of 12/31/2025</div>
               <div className="gm-stats__lines">
                 <div className="ln1" />
                 <div className="ln2" />
@@ -1725,7 +1749,7 @@ const Navbar = () => {
           className="gm-logos-showcase align-full gm-section-element gm-logos-showcase_ow-top-dg-text-sand-bottom "
         >
           <div className="gm-logos-showcase__header">
-            <div className="gm-logos-showcase__header-title">Featured In </div>
+            <div className="gm-logos-showcase__header-title">Featured In</div>
           </div>
           <div className="gm-logos-showcase__body">
             <div className="swiper">
@@ -2009,7 +2033,7 @@ const Navbar = () => {
               role="navigation"
               aria-label="footer navigation 1"
             >
-              <div className="gm-footer__nav-title">Company </div>
+              <div className="gm-footer__nav-title">Company</div>
               <ul id="menu-company" className="gm-footer__menu">
                 <li
                   id="menu-item-22"
@@ -2064,7 +2088,7 @@ const Navbar = () => {
               role="navigation"
               aria-label="footer navigation 2"
             >
-              <div className="gm-footer__nav-title">Services </div>
+              <div className="gm-footer__nav-title">Services</div>
               <ul id="menu-services" className="gm-footer__menu">
                 <li
                   id="menu-item-3209"
@@ -2119,7 +2143,7 @@ const Navbar = () => {
               role="navigation"
               aria-label="footer navigation 3"
             >
-              <div className="gm-footer__nav-title">Legal </div>
+              <div className="gm-footer__nav-title">Legal</div>
               <ul id="menu-legal" className="gm-footer__menu">
                 <li
                   id="menu-item-31"
