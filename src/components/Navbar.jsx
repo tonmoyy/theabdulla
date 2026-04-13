@@ -1773,10 +1773,10 @@ const Navbar = () => {
                       data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/thumb-13-1024x576.jpg 1024w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/thumb-13-300x169.jpg 300w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/thumb-13-768x432.jpg 768w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/thumb-13-1536x864.jpg 1536w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/thumb-13.jpg 1920w"
                     />{" "} */}
                   </span>
-                  <span className="gm-featured-content-2up__item-date">
+                  {/* <span className="gm-featured-content-2up__item-date">
                     January 26, 2026{" "}
-                  </span>
-                  <h3 className="h5">Bloomberg The Close</h3>
+                  </span> */}
+                  <h3 className="h5">A Visionary Leader</h3>
                   <span className="gm-featured-content-2up__item-excerpt"></span>
                   <button className="gm-btn" aria-label="Read more">
                     <span>Read more</span>
