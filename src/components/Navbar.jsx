@@ -1,6 +1,11 @@
 import { Logo3 } from "../assets";
 import { business1 } from "../assets";
 import { useState } from "react";
+import { AS } from "../assets";
+import { Bullet } from "@apptane/react-ui-bullet";
+import { invphil1 } from "../assets";
+import { Abdulla1 } from "../assets";
+import { LogoAbdulla3 } from "../assets";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -221,7 +226,7 @@ const Navbar = () => {
             <span style={{ display: "none" }}>link</span>
             <img
               width={100}
-              height={36}
+              height={60}
               src={Logo3}
               className="attachment-medium_large size-medium_large"
               alt="The Abdulla Capital"
@@ -238,8 +243,71 @@ const Navbar = () => {
                 id="menu-item-40"
                 className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40"
               >
-                <a href="about-us/index.html" data-title="About Us">
-                  <span>About Us</span>
+                <a href="about/index.html" data-title="About Us">
+                  <span>About</span>
+                  <svg
+                    role="presentation"
+                    width={18}
+                    height={17}
+                    viewBox="0 0 18 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.9492 4.20421C14.0287 6.36232 10.9384 9.69296 8.96771 11.8484L8.86227 11.9648L8.75683 11.8484L5.25728 8.03577C4.38368 7.09073 2.63388 5.16821 1.77528 4.20421L1.88078 4.09041C4.86318 5.78831 7.42881 8.17116 9.81874 10.7003H7.90328C9.66812 8.79938 11.576 7.02574 13.6396 5.50661C14.3501 5.00841 15.0555 4.50471 15.8438 4.09041L15.9492 4.20421Z"
+                      fill="#003147"
+                    />
+                  </svg>
+                </a>
+                <ul className="sub-menu">
+                  <li
+                    id="menu-item-41"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"
+                  >
+                    <a href="about/index.html#who-we-are" data-title="Vision">
+                      <span>Vision</span>
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-2635"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2635"
+                  >
+                    <a
+                      href="about/index.html#our-history"
+                      data-title="Investment Philosophy"
+                    >
+                      <span> Disciplined Capital Allocation </span>
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-42"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-42"
+                  >
+                    <a
+                      href="about/index.html#leadership
+"
+                      data-title="Leadership
+"
+                    >
+                      <span>Leadership</span>
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-44"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-44"
+                  >
+                    <a href="careers/index.html" data-title="Careers">
+                      <span>Careers</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                id="menu-item-40"
+                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40"
+              >
+                <a href="platform/index.html" data-title="Platform">
+                  <span>Platform</span>
                   <svg
                     role="presentation"
                     width={18}
@@ -260,10 +328,10 @@ const Navbar = () => {
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"
                   >
                     <a
-                      href="about-us/index.html#who-we-are"
-                      data-title="Who We Are"
+                      href="platform/index.html#investment"
+                      data-title="Investment"
                     >
-                      <span>Who We Are</span>
+                      <span>Investment</span>
                     </a>
                   </li>
                   <li
@@ -271,50 +339,29 @@ const Navbar = () => {
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2635"
                   >
                     <a
-                      href="about-us/index.html#our-history"
-                      data-title="Our History"
+                      href="platform/index.html#advisory"
+                      data-title="Advisory"
                     >
-                      <span>Our History</span>
+                      <span>Advisory</span>
                     </a>
                   </li>
                   <li
                     id="menu-item-42"
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-42"
                   >
-                    <a
-                      href="about-us/index.html#the-board"
-                      data-title="The Board"
-                    >
-                      <span>The Board</span>
-                    </a>
-                  </li>
-                  <li
-                    id="menu-item-43"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-43"
-                  >
-                    <a
-                      href="about-us/index.html#our-leadership"
-                      data-title="Our People"
-                    >
-                      <span>Our People</span>
-                    </a>
-                  </li>
-                  <li
-                    id="menu-item-44"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-44"
-                  >
-                    <a href="careers/index.html" data-title="Careers">
-                      <span>Careers</span>
+                    <a href="platform/index.html#Equity" data-title="Equity">
+                      <span>Equity </span>
                     </a>
                   </li>
                 </ul>
               </li>
+
               <li
-                id="menu-item-45"
-                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-45"
+                id="menu-item-40"
+                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40"
               >
-                <a className="button" data-title="A True Partnership">
-                  <span>A True Partnership</span>
+                <a href="investments/index.html" data-title="Investments">
+                  <span>Investments</span>
                   <svg
                     role="presentation"
                     width={18}
@@ -331,107 +378,131 @@ const Navbar = () => {
                 </a>
                 <ul className="sub-menu">
                   <li
-                    id="menu-item-3185"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3185"
+                    id="menu-item-41"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"
                   >
                     <a
-                      href="private-wealth-management/high-net-worth-individuals-and-families/index.html"
-                      data-title="Individuals & Families"
+                      href="investments/index.html#investment-focus"
+                      data-title="Investment Focus"
                     >
-                      <span>Individuals &amp; Families</span>
+                      <span>Investment Focus</span>
                     </a>
                   </li>
                   <li
-                    id="menu-item-3186"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3186"
+                    id="menu-item-2635"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2635"
                   >
                     <a
-                      href="private-wealth-management/family-office-services/index.html"
-                      data-title="Family Office Services"
+                      href="investments/index.html#sector-coverage"
+                      data-title="Sector Coverage"
                     >
-                      <span>Family Office Services</span>
-                    </a>
-                  </li>
-                  <li
-                    id="menu-item-6075"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6075"
-                  >
-                    <a
-                      href="business-owners/index.html"
-                      data-title="Business Owners"
-                    >
-                      <span>Business Owners</span>
-                    </a>
-                  </li>
-                  <li
-                    id="menu-item-3187"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3187"
-                  >
-                    <a
-                      href="endowments-foundations/foundation-investment-management/index.html"
-                      data-title="Foundations"
-                    >
-                      <span>Foundations</span>
-                    </a>
-                  </li>
-                  <li
-                    id="menu-item-2278"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2278"
-                  >
-                    <a
-                      href="sustainable-investing-overview/index.html"
-                      data-title="Sustainable Investing"
-                    >
-                      <span>Sustainable Investing</span>
-                    </a>
-                  </li>
-                  <li
-                    id="menu-item-3188"
-                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3188"
-                  >
-                    <a
-                      href="endowments-foundations/endowment-foundation-management/index.html"
-                      data-title="Endowments"
-                    >
-                      <span>Endowments</span>
-                    </a>
-                  </li>
-                  <li
-                    id="menu-item-51"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-51"
-                  >
-                    <a
-                      className="js-open-modal"
-                      href="#"
-                      data-title="Financial Intermediaries"
-                      data-modal="#modal-financial-intermediaries"
-                    >
-                      <span>Financial Intermediaries</span>
+                      <span>Sector Coverage </span>
                     </a>
                   </li>
                 </ul>
               </li>
+
               <li
-                id="menu-item-3378"
-                className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3378"
+                id="menu-item-40"
+                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40"
               >
-                <a href="news-insights/index.html" data-title="News & Insights">
-                  <span>News &amp; Insights</span>
+                <a href="partnerships/index.html" data-title="Partnerships">
+                  <span>Partnerships</span>
+                  <svg
+                    role="presentation"
+                    width={18}
+                    height={17}
+                    viewBox="0 0 18 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.9492 4.20421C14.0287 6.36232 10.9384 9.69296 8.96771 11.8484L8.86227 11.9648L8.75683 11.8484L5.25728 8.03577C4.38368 7.09073 2.63388 5.16821 1.77528 4.20421L1.88078 4.09041C4.86318 5.78831 7.42881 8.17116 9.81874 10.7003H7.90328C9.66812 8.79938 11.576 7.02574 13.6396 5.50661C14.3501 5.00841 15.0555 4.50471 15.8438 4.09041L15.9492 4.20421Z"
+                      fill="#003147"
+                    />
+                  </svg>
                 </a>
+                <ul className="sub-menu">
+                  <li
+                    id="menu-item-41"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"
+                  >
+                    <a
+                      href="partnerships/index.html#who-we-partner-with"
+                      data-title="Who We Partner With"
+                    >
+                      <span>Who We Partner With</span>
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-2635"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2635"
+                  >
+                    <a
+                      href="partnerships/index.html#submit-opportunity"
+                      data-title="Submit Opportunity"
+                    >
+                      <span>Submit Opportunity</span>
+                    </a>
+                  </li>
+                </ul>
               </li>
+
               <li
-                id="menu-item-57"
-                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-57"
+                id="menu-item-40"
+                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40"
               >
-                <a
-                  target="_blank"
-                  rel="noopener"
-                  aria-label="TheAbdullaCapital, open in new tab"
-                  href="https://www.TheAbdullaCapital.com/"
-                  data-title="TheAbdullaCapital"
-                >
-                  <span>TheAbdullaCapital</span>
+                <a href="insights/index.html" data-title="Insights">
+                  <span>Insights</span>
+                  <svg
+                    role="presentation"
+                    width={18}
+                    height={17}
+                    viewBox="0 0 18 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.9492 4.20421C14.0287 6.36232 10.9384 9.69296 8.96771 11.8484L8.86227 11.9648L8.75683 11.8484L5.25728 8.03577C4.38368 7.09073 2.63388 5.16821 1.77528 4.20421L1.88078 4.09041C4.86318 5.78831 7.42881 8.17116 9.81874 10.7003H7.90328C9.66812 8.79938 11.576 7.02574 13.6396 5.50661C14.3501 5.00841 15.0555 4.50471 15.8438 4.09041L15.9492 4.20421Z"
+                      fill="#003147"
+                    />
+                  </svg>
                 </a>
+                <ul className="sub-menu">
+                  <li
+                    id="menu-item-41"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"
+                  >
+                    <a
+                      href="insights/index.html#market-outlook"
+                      data-title="Market Outlook"
+                    >
+                      <span>Market Outlook</span>
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-2635"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2635"
+                  >
+                    <a
+                      href="insights/index.html#investment-commentary"
+                      data-title="Investment Commentary"
+                    >
+                      <span>Investment Commentary</span>
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-2635"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2635"
+                  >
+                    <a
+                      href="insights/index.html#strategic-research"
+                      data-title="Strategic Research"
+                    >
+                      <span>Strategic Research</span>
+                    </a>
+                  </li>
+                </ul>
               </li>
             </ul>
             <div className="gm-header__info">
@@ -548,7 +619,7 @@ const Navbar = () => {
             <ul id="menu-header-menu-1" className="gm-mobile-header__menu">
               <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40 ">
                 <div className="menu-item-children">
-                  <a href="about-us/index.html">
+                  <a href="about/index.html">
                     <span>About Us</span>
                   </a>
                   {/*<button*/}
@@ -573,22 +644,22 @@ const Navbar = () => {
                 </div>
                 <ul className="sub-menu">
                   <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-41">
-                    <a href="about-us/index.html#who-we-are">
+                    <a href="about/index.html#who-we-are">
                       <span>Who We Are</span>
                     </a>
                   </li>
                   <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2635">
-                    <a href="about-us/index.html#our-history">
+                    <a href="about/index.html#our-history">
                       <span>Our History</span>
                     </a>
                   </li>
                   <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-42">
-                    <a href="about-us/index.html#the-board">
+                    <a href="about/index.html#the-board">
                       <span>The Board</span>
                     </a>
                   </li>
                   <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-43">
-                    <a href="about-us/index.html#our-leadership">
+                    <a href="about/index.html#our-leadership">
                       <span>Our People</span>
                     </a>
                   </li>
@@ -758,28 +829,32 @@ const Navbar = () => {
                   style={{ position: "relative", display: "inline-block" }}
                   className="gm-home-page-hero__title-word gm-home-page-hero__title-word_1"
                 >
-                  An
+                  Building
                 </span>{" "}
                 <span
                   style={{ position: "relative", display: "inline-block" }}
                   className="gm-home-page-hero__title-word gm-home-page-hero__title-word_2"
                 >
-                  <em>unwavering focus</em>
+                  <em>Enduring Value </em>
                 </span>{" "}
                 <span
                   style={{ position: "relative", display: "inline-block" }}
-                  className="gm-home-page-hero__title-word gm-home-page-hero__title-word_1"
+                  className="gm-home-page-hero__title-word "
                 >
-                  on
+                  Through Strategic
                 </span>{" "}
-                wealth and investment management
+                <span
+                  style={{ position: "relative", display: "inline-block" }}
+                  className="gm-home-page-hero__title-word "
+                >
+                  Capital.
+                </span>
               </h1>
             </div>
             <div className="gm-home-page-hero__description">
               <p>
-                Our independent ownership, continuous innovation, and enduring
-                commitment to our clients have made us a trusted partner for
-                more than 65 years.
+                A private capital platform operating across investment
+                stewardship, strategic advisory and equity partnerships.
               </p>
             </div>
           </div>
@@ -809,7 +884,7 @@ const Navbar = () => {
                 decoding="async"
                 width={469}
                 height={505}
-                src="#"
+                src={AS}
                 className="attachment-medium_large size-medium_large lazyload"
                 alt="A unique perspective of a building from below, showcasing architectural innovation."
                 sizes="(max-width: 469px) 100vw, 469px"
@@ -820,11 +895,13 @@ const Navbar = () => {
             </div>
             <div className="gm-flexible-small-image-content__content">
               <div className="gm-flexible-small-image-content__text gm-flexible-small-image-content__text_left">
-                <h2>Empowering Financial Futures.</h2>
+                <h2> A Multi-Disciplinary Capital Platform</h2>
                 <p>
-                  We believe every client is a universe of one. Our commitment
-                  to clients is guided by our values and driven by the pursuit
-                  of excellence.
+                  Abdulla Capital operates at the intersection of private
+                  investment, strategic advisory and equity participation. The
+                  platform is designed to preserve capital, assess opportunity
+                  and create enduring value across sectors, markets and
+                  long-term partnerships. .
                 </p>
               </div>
             </div>
@@ -835,13 +912,11 @@ const Navbar = () => {
           className="gm-links-carousel-images align-full gm-section-element gm-links-carousel-images_bg-ltblu-text-deepgrey-cta-drkblu"
         >
           <div className="gm-links-carousel-images__heading">
-            <h2>
-              A Perfectly Positioned Boutique Wealth &amp; Investment Manager
-            </h2>
+            <h2> Disciplined Capital Allocation</h2>
             <p>
-              With a four-to-one client-to-employee ratio, we give each client
-              the undivided attention they deserve. Our optimal structure and
-              scale allow us to provide comprehensive, customized solutions.
+              We operate with a disciplined investment framework rooted in
+              governance, long-term thinking, and strategic alignment. We
+              prioritise sustainable value over short-term gains.
             </p>
           </div>
           <div className="gm-links-carousel-images__container">
@@ -852,40 +927,40 @@ const Navbar = () => {
                   className="active"
                   data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-individuals-families"
                 >
-                  Individuals &amp; Families{" "}
+                  Long-term investment mindset
                 </a>
                 <a
                   href="private-wealth-management/family-office-services/index.html"
                   data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-family-office-services"
                 >
-                  Family Office Services{" "}
+                  Governance-driven decision making
                 </a>
                 <a
                   href="endowments-foundations/endowment-foundation-management/index.html"
                   data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-endowments"
                 >
-                  Endowments{" "}
+                  Strategic partnerships over speculation
                 </a>
                 <a
                   href="endowments-foundations/foundation-investment-management/index.html"
                   data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-foundations"
                 >
-                  Foundations{" "}
+                  Focus on sustainable value creation
                 </a>
-                <a
+                {/* <a
                   href="https://www.TheAbdullaCapitalim.com/"
                   className=" js-gm-disabled-link"
                   data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-institutions-consultants"
                 >
                   Institutions &amp; Consultants{" "}
-                </a>
-                <a
+                </a> */}
+                {/* <a
                   href="https://www.TheAbdullaCapitalim.com/"
                   className=" js-gm-disabled-link"
                   data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-financial-advisors"
                 >
                   Financial Advisors{" "}
-                </a>
+                </a> */}
               </div>
             </div>
             <div className="gm-links-carousel-images__wrap">
@@ -893,7 +968,7 @@ const Navbar = () => {
                 className="js-item gm-links-carousel-images__item active"
                 data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-individuals-families"
               >
-                <button
+                {/* <button
                   type="button"
                   className="js-btn-mobile h5 gm-links-carousel-images__wrap-btn"
                 >
@@ -910,7 +985,7 @@ const Navbar = () => {
                       fill="#1F292E"
                     />
                   </svg>
-                </button>
+                </button> */}
                 <div className="js-item-inner gm-links-carousel-images__item-inner">
                   <div className="gm-links-carousel-images__item-content">
                     <div className="gm-links-carousel-images__item-image">
@@ -919,7 +994,7 @@ const Navbar = () => {
                           decoding="async"
                           width={1024}
                           height={807}
-                          src="#"
+                          src={invphil1}
                           className="attachment-large size-large lazyload"
                           alt="boots"
                           sizes="(max-width: 1024px) 100vw, 1024px"
@@ -928,7 +1003,7 @@ const Navbar = () => {
                         />{" "}
                       </div>
                     </div>
-                    <div className="gm-links-carousel-images__item-info">
+                    {/* <div className="gm-links-carousel-images__item-info">
                       <div className="gm-links-carousel-images__item-headline">
                         <h2>
                           Empowering your confident pursuit of purpose,
@@ -954,11 +1029,11 @@ const Navbar = () => {
                           </svg>
                         </a>{" "}
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
-              <div
+              {/* <div
                 className="js-item gm-links-carousel-images__item"
                 data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-family-office-services"
               >
@@ -1027,8 +1102,8 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
+              </div> */}
+              {/* <div
                 className="js-item gm-links-carousel-images__item"
                 data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-endowments"
               >
@@ -1095,8 +1170,8 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
+              </div> */}
+              {/* <div
                 className="js-item gm-links-carousel-images__item"
                 data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-foundations"
               >
@@ -1164,8 +1239,8 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
+              </div> */}
+              {/* <div
                 className="js-item gm-links-carousel-images__item"
                 data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-institutions-consultants"
               >
@@ -1288,8 +1363,8 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-              <div
+              </div> */}
+              {/* <div
                 className="js-item gm-links-carousel-images__item"
                 data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-financial-advisors"
               >
@@ -1410,11 +1485,11 @@ const Navbar = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
-        <section
+        {/* <section
           id="gm-stats-block_f0468cc129d273e33415ff312019231b"
           className="gm-stats align-full gm-section-element gm-stats_right"
           style={{}}
@@ -1432,7 +1507,7 @@ const Navbar = () => {
               <div className="gm-stats__btn">
                 <a
                   className="gm-btn gm-btn_blue"
-                  href="about-us/index.html"
+                  href="about/index.html"
                   aria-label="About Us"
                 >
                   <span>About Us</span>
@@ -1511,13 +1586,13 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         <section
           id="gm-large-image-content-block_1b6498d13d83223a58dc225af99065de"
           className="gm-large-image-content align-full gm-section-element gm-large-image-content_right  large-image-content--off-white"
           style={{ backgroundColor: "var(--wp--preset--color--off-white)" }}
         >
-          <div className="gm-large-image-content__container">
+          {/* <div className="gm-large-image-content__container">
             <div className="gm-large-image-content__media">
               <div className="gm-large-image-content__media-wrap">
                 <img
@@ -1566,14 +1641,14 @@ const Navbar = () => {
                 </svg>
               </a>{" "}
             </div>
-          </div>
+          </div> */}
         </section>
         <section
           id="gm-large-image-content-block_a819995c7bc9e518d9b4abbd62a8b51a"
           className="gm-large-image-content align-full gm-section-element gm-large-image-content_left  large-image-content--off-white"
           style={{ backgroundColor: "var(--wp--preset--color--off-white)" }}
         >
-          <div className="gm-large-image-content__container">
+          {/* <div className="gm-large-image-content__container">
             <div className="gm-large-image-content__media">
               <div className="gm-large-image-content__media-wrap">
                 <img
@@ -1622,7 +1697,7 @@ const Navbar = () => {
                 </svg>
               </a>{" "}
             </div>
-          </div>
+          </div> */}
         </section>
         <section
           id="gm-featured-content-2up-block_2bb816a3bcb5f0724d91cdf79c16aff1"
@@ -1631,7 +1706,7 @@ const Navbar = () => {
           <div className="gm-featured-content-2up__header">
             <div className="gm-featured-content-2up__header-container">
               <h2 className="h3 gm-featured-content-2up__header-title">
-                Featured News &amp; Insights{" "}
+                Leadership
               </h2>
             </div>
           </div>
@@ -1649,25 +1724,22 @@ const Navbar = () => {
                     <img
                       loading="lazy"
                       decoding="async"
-                      width={853}
-                      height={1024}
-                      src="#"
+                      width={400}
+                      height={762}
+                      src={Abdulla1}
                       className="attachment-large size-large lazyload"
                       alt="Greg Khost headshot"
-                      sizes="auto, (max-width: 853px) 100vw, 853px"
+                      //   sizes="auto, (max-width: 853px) 100vw, 853px"
                       data-src="https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/Joe-Coconate_crop-853x1024.jpg"
                       data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/Joe-Coconate_crop-853x1024.jpg 853w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/Joe-Coconate_crop-250x300.jpg 250w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/Joe-Coconate_crop-768x921.jpg 768w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/Joe-Coconate_crop.jpg 936w"
                     />{" "}
                   </span>
-                  <span className="gm-featured-content-2up__item-date">
-                    January 09, 2026{" "}
-                  </span>
-                  <h3 className="h5">New Florida Regional Director</h3>
+                  <span className="gm-featured-content-2up__item-date"></span>
+                  <h3 className="h5">Abdulla Salem </h3>
                   <span className="gm-featured-content-2up__item-excerpt">
-                    TheAbdullaCapital Appoints Joe Coconate as Florida Regional
-                    Director Experienced Wealth Management Leader to Drive
-                    Firm’s Growth Across Florida Palm Beach, FL (January 9,
-                    2026) – TheAbdullaCapital, a …{" "}
+                    Abdulla Salem Entrepreneur, investor, and strategic operator
+                    building ventures across the sports and investment
+                    ecosystem.
                   </span>
                   <button className="gm-btn" aria-label="Read more">
                     <span>Read more</span>
@@ -1688,7 +1760,7 @@ const Navbar = () => {
                   className="gm-featured-content-2up__item"
                 >
                   <span className="gm-featured-content-2up__item-img">
-                    <img
+                    {/* <img
                       loading="lazy"
                       decoding="async"
                       width={1024}
@@ -1699,7 +1771,7 @@ const Navbar = () => {
                       sizes="auto, (max-width: 1024px) 100vw, 1024px"
                       data-src="https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/thumb-13-1024x576.jpg"
                       data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/thumb-13-1024x576.jpg 1024w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/thumb-13-300x169.jpg 300w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/thumb-13-768x432.jpg 768w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/thumb-13-1536x864.jpg 1536w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/thumb-13.jpg 1920w"
-                    />{" "}
+                    />{" "} */}
                   </span>
                   <span className="gm-featured-content-2up__item-date">
                     January 26, 2026{" "}
@@ -2019,7 +2091,7 @@ const Navbar = () => {
               <img
                 width={237}
                 height={41}
-                src="wp-content/uploads/2023/06/light-logo.svg"
+                src={LogoAbdulla3}
                 className="attachment-medium_large size-medium_large"
                 alt="TheAbdullaCapital"
                 decoding="async"
@@ -2039,8 +2111,8 @@ const Navbar = () => {
                   id="menu-item-22"
                   className="menu-item menu-item-type-custom menu-item-object-custom menu-item-22"
                 >
-                  <a href="about-us/index.html" data-title="About Us">
-                    <span>About Us</span>
+                  <a href="about/index.html" data-title="About Us">
+                    <span>About</span>
                   </a>
                 </li>
                 <li
@@ -2048,7 +2120,7 @@ const Navbar = () => {
                   className="menu-item menu-item-type-custom menu-item-object-custom menu-item-23"
                 >
                   <a href="careers/index.html" data-title="Careers">
-                    <span>Careers</span>
+                    <span>Platform</span>
                   </a>
                 </li>
                 <li
@@ -2059,7 +2131,7 @@ const Navbar = () => {
                     href="inclusion/index.html"
                     data-title="Inclusion & Community"
                   >
-                    <span>Inclusion &amp; Community</span>
+                    <span>Investments</span>
                   </a>
                 </li>
                 <li
@@ -2070,7 +2142,15 @@ const Navbar = () => {
                     href="contact-us/index.html#locations"
                     data-title="Locations"
                   >
-                    <span>Locations</span>
+                    <span>Partnerships</span>
+                  </a>
+                </li>
+                <li
+                  id="menu-item-26"
+                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-26"
+                >
+                  <a href="contact-us/index.html" data-title="Contact Us">
+                    <span>Insights</span>
                   </a>
                 </li>
                 <li
@@ -2088,7 +2168,7 @@ const Navbar = () => {
               role="navigation"
               aria-label="footer navigation 2"
             >
-              <div className="gm-footer__nav-title">Services</div>
+              {/* <div className="gm-footer__nav-title">Services</div>
               <ul id="menu-services" className="gm-footer__menu">
                 <li
                   id="menu-item-3209"
@@ -2136,7 +2216,7 @@ const Navbar = () => {
                     <span>Sustainable Investing</span>
                   </a>
                 </li>
-              </ul>{" "}
+              </ul>{" "} */}
             </div>
             <div
               className="gm-footer__nav"
@@ -2150,7 +2230,7 @@ const Navbar = () => {
                   className="menu-item menu-item-type-custom menu-item-object-custom menu-item-31"
                 >
                   <a href="terms-of-use/index.html" data-title="Terms of Use">
-                    <span>Terms of Use</span>
+                    <span>Governance</span>
                   </a>
                 </li>
                 <li
@@ -2161,7 +2241,7 @@ const Navbar = () => {
                     href="privacy-policy/index.html"
                     data-title="Privacy Policy"
                   >
-                    <span>Privacy Policy</span>
+                    <span>Disclaimer</span>
                   </a>
                 </li>
                 <li
@@ -2169,17 +2249,17 @@ const Navbar = () => {
                   className="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"
                 >
                   <a href="disclosures/index.html" data-title="Disclosures">
-                    <span>Disclosures</span>
+                    <span>Privacy Policy</span>
                   </a>
                 </li>
-                <li
+                {/* <li
                   id="menu-item-3865"
                   className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3865"
                 >
                   <a href="accessibility/index.html" data-title="Accessibility">
                     <span>Accessibility</span>
                   </a>
-                </li>
+                </li> */}
                 <li
                   id="ot-sdk-btn"
                   className="ot-sdk-show-settings menu-item menu-item-type-custom menu-item-object-custom menu-item-4716"
@@ -2286,9 +2366,9 @@ const Navbar = () => {
             />
           </svg>
         </button>
-        <div className="gm-form-post__header">
+        {/* <div className="gm-form-post__header">
           <h4 className="gm-form-post__title">Contact Us</h4>
-        </div>
+        </div> */}
         <div className="gm-form-post__form"></div>
         <div className="js-popup-focus-trap" tabIndex={0} />
       </div>

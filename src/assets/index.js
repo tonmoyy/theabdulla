@@ -56,8 +56,11 @@ export { default as benefitIcon3 } from "./benefits/icon-3.svg";
 export { default as benefitIcon4 } from "./benefits/icon-4.svg";
 export { default as benefitImage2 } from "./benefits/image-2.png";
 
-export{default as business1} from "./business-1.jpg";
-
+export { default as business1 } from "./business-1.jpg";
+export { default as AS } from "./AS.png";
+export { default as invphil1 } from "./invphil1.png";
+export { default as Abdulla1 } from "./Abdulla1.png";
+export { default as LogoAbdulla3 } from "./LogoAbdulla3.png";
 // Socials Section
 export { default as discordBlack } from "./socials/discord.svg";
 export { default as facebook } from "./socials/facebook.svg";
