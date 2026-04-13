@@ -9,6 +9,11 @@ import { LogoAbdulla3 } from "../assets";
 import { dfm } from "../assets";
 import { CNN_International_logo } from "../assets";
 import { cnbc } from "../assets";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+
+// Import Swiper styles
+import "swiper/css";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -1819,7 +1824,7 @@ const Navbar = () => {
             </div>
           </div>
         </section>
-        <section
+        {/* <section
           id="gm-logos-showcase-block_d98cadc90e387afb184310514a5942bf"
           className="gm-logos-showcase align-full gm-section-element gm-logos-showcase_ow-top-dg-text-sand-bottom "
         >
@@ -2040,6 +2045,69 @@ const Navbar = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </section> */}
+        <section id="gm-logos-showcase-block" className="gm-logos-showcase">
+          <div className="gm-logos-showcase__header">
+            <div className="gm-logos-showcase__header-title">Featured In</div>
+          </div>
+
+          <div className="gm-logos-showcase__body">
+            <Swiper
+              modules={[Autoplay]}
+              spaceBetween={30}
+              slidesPerView={5}
+              loop={true}
+              speed={10000}
+              autoplay={{
+                delay: 0,
+                disableOnInteraction: false,
+              }}
+              //   breakpoints={{
+              //     320: { slidesPerView: 2 },
+              //     768: { slidesPerView: 3 },
+              //     1024: { slidesPerView: 5 },
+              //   }}
+            >
+              <SwiperSlide>
+                <span className="gm-logos-showcase__item-image">
+                  <img src={dfm} alt="Associated Press" />
+                </span>
+              </SwiperSlide>
+              <SwiperSlide>
+                <span className="gm-logos-showcase__item-image">
+                  <img
+                    loading="lazy"
+                    decoding="async"
+                    width={212}
+                    height={142}
+                    src={CNN_International_logo}
+                    className="attachment-medium size-medium lazyload"
+                    data-src="wp-content/uploads/2024/11/CNN_logo-copy.png"
+                  />{" "}
+                </span>
+              </SwiperSlide>
+              <SwiperSlide>
+                <span className="gm-logos-showcase__item-image">
+                  <img src={dfm} alt="Associated Press" />
+                </span>
+              </SwiperSlide>
+              <SwiperSlide>
+                <span className="gm-logos-showcase__item-image">
+                  <img src={dfm} alt="Associated Press" />
+                </span>
+              </SwiperSlide>
+              <SwiperSlide>
+                <span className="gm-logos-showcase__item-image">
+                  <img src={dfm} alt="Associated Press" />
+                </span>
+              </SwiperSlide>
+              <SwiperSlide>
+                <span className="gm-logos-showcase__item-image">
+                  <img src={dfm} alt="Associated Press" />
+                </span>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </section>
         <section

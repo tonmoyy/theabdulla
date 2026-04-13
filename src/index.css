@@ -1,11 +1,16 @@
 @import "tailwindcss";
 @import "flowbite-react/plugin/tailwindcss";
 @import "@fontsource/manrope";
+/* @import "swiper/css"; */
 
 @source "../.flowbite-react/class-list.json";
 
 .swiper-wrapper {
   --swiper-wrapper-transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.gm-logos-showcase .swiper-wrapper {
+  transition-timing-function: linear !important;
 }
 :root {
   --wp--preset--color--off-white: #f8f9fa; /* Or your desired color */
@@ -2579,6 +2584,14 @@ img:is([sizes="auto" i], [sizes^="auto," i]) {
       2.8125rem
     );
   }
+  .gm-logos-showcase__item-image {
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    opacity: 0.6;
+    transition: all 0.3s ease;
+  }
+
   .exit-modal,
   .exit-modal-overlay {
     position: fixed;
