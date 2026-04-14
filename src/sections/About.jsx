@@ -1,58 +1,74 @@
-import Heading from "../components/Heading";
-import Section from "../components/Section";
-import Arrow from "../assets/svg/Arrow";
-import ClipPath from "../assets/svg/ClipPath";
-import { benefitIcon1, benefitImage2 } from "../assets";
-
-const about = [
-    {
-        title: "A Multi-Disciplinary Capital Platform",
-        text: "The Abdulla Capital operates at the intersection of private investment, financial advisory, and strategic equity partnerships.\n" +
-            "Our platform is designed to preserve capital, identify opportunities, and create long-term value across industries and markets.",
-        backgroundUrl: "./src/assets/about/card-1.svg",
-        iconUrl: benefitIcon1,
-        imageUrl: benefitImage2,
-    }
-];
+import {useEffect, useRef, useState} from "react";
+import { AS } from "../assets";
 
 const About = () => {
+
+
+    // States and refs for Div 1
+    const [isVisible1, setIsVisible1] = useState(false);
+    const domRef1 = useRef();
+
+    // Reusable observer effect logic
+    const createObserver = (setState) => new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    setState(true);
+                    // Optional: stop observing once visible
+                    // observer.unobserve(entry.target);
+                }
+            });
+        },
+        { threshold: 0.99 }
+    );
+
+    useEffect(() => {
+        const observer1 = createObserver(setIsVisible1);
+        const { current: current1 } = domRef1;
+        if (current1) observer1.observe(current1);
+
+
+        return () => {
+            if (current1) observer1.unobserve(current1);
+        };
+    }, []);
+
     return (
-        <Section id="about">
-            <div className="container relative z-2">
-                <Heading className="md:max-w-md lg:max-w-2xl" title="ABOUT THE PLATFORM
-" />
-
-                <div className="flex flex-wrap gap-10 mb-10">
-                    {about.map((item, i) => (
-                        <div
-                            className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] w-full "
-                            style={{
-                                backgroundImage: `url(${item.backgroundUrl})`,
-                            }}
-                            key={i}
-                        >
-                            <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem]">
-                                <h5 className="h5 mb-5">{item.title}</h5>
-                                <p className="body-2 mb-6 text-n-3">{item.text}</p>
-                                <div className="flex items-center mt-auto">
-                                    <img src={item.iconUrl} width={48} height={48} alt={item.title} />
-                                    <p className="ml-auto font-code text-xs font-bold text-white uppercase tracking-wider">Explore more</p>
-                                    <Arrow />
-                                </div>
-                            </div>
-
-                            {item.light && <div className="absolute top-0 left-1/4 w-full aspect-square bg-radial-gradient from-[#28206C] to-[#28206C]/0 to-70% pointer-events-none" />}
-
-                            <div className="absolute inset-0.5 bg-n-8" style={{ clipPath: "url(#about)" }}>
-                                <div className="absolute inset-0 opacity-0 transition-opacity group-hover:opacity-10">{item.imageUrl && <img src={item.imageUrl} width={380} height={362} alt={item.title} className="w-full h-full object-cover" />}</div>
-                            </div>
-
-                            <ClipPath />
-                        </div>
-                    ))}
+        <section
+            id="gm-flexible-small-image-content-block_39347a86ddcd341afac95ff5a57bf6b6"
+            className="gm-flexible-small-image-content align-full gm-section-element gm-flexible-small-image-content_bg-sand-text-deepgrey-cta-drkblu"
+        >
+            <div className="gm-flexible-small-image-content__container gm-flexible-small-image-content__container_text-right">
+                <div className="gm-flexible-small-image-content__image">
+                    <img
+                        decoding="async"
+                        width={469}
+                        height={505}
+                        src={AS}
+                        className="attachment-medium_large size-medium_large lazyload"
+                        alt="A unique perspective of a building from below, showcasing architectural innovation."
+                        sizes="(max-width: 469px) 100vw, 469px"
+                        data-src="https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Rectangle-4517.jpg"
+                        data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Rectangle-4517.jpg 469w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Rectangle-4517-279x300.jpg 279w"
+                    />{" "}
+                    <div className="gm-flexible-small-image-content__frame" />
+                </div>
+                <div className="gm-flexible-small-image-content__content">
+                    <div
+                        ref={domRef1}
+                        className={`gm-flexible-small-image-content__text ${isVisible1 ? 'is-visible' : ''}`}>
+                        <h2> A Multi-Disciplinary Capital Platform</h2>
+                        <p>
+                            Abdulla Capital operates at the intersection of private
+                            investment, strategic advisory and equity participation. The
+                            platform is designed to preserve capital, assess opportunity
+                            and create enduring value across sectors, markets and
+                            long-term partnerships. .
+                        </p>
+                    </div>
                 </div>
             </div>
-        </Section>
+        </section>
     );
 };
 

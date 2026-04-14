@@ -160,7 +160,9 @@ img:is([sizes="auto" i], [sizes^="auto," i]) {
     .menu-item-row
     li
     a:hover {
+
     font-weight: 700;
+
   }
   img,
   svg {
@@ -2084,10 +2086,7 @@ img:is([sizes="auto" i], [sizes^="auto," i]) {
     opacity: 0;
     visibility: hidden;
     transform: translateY(20px); /* Optional: Start slightly lower */
-    transition:
-      opacity 0.5s ease-out,
-      transform 0.5s ease-out,
-      visibility 0.5s;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out, visibility 0.5s;
   }
 
   .gm-flexible-small-image-content__text.is-visible {
@@ -2111,40 +2110,37 @@ img:is([sizes="auto" i], [sizes^="auto," i]) {
     overflow: hidden;
   }
   /*.gm-links-carousel-images__heading {*/
-  /*max-width: min(*/
-  /*  100% - clamp(3.125rem, 3.125rem + ((1vw - 0.48rem) * 17.4051), 10rem),*/
-  /*  840px*/
-  /*);*/
-  /*margin-left: auto;*/
-  /*margin-right: auto;*/
-  /*margin-bottom: clamp(*/
-  /*  3.875rem,*/
-  /*  3.875rem + ((1vw - 0.48rem) * 4.4304),*/
-  /*  5.625rem*/
-  /*);*/
-  /*visibility: visible;*/
+    /*max-width: min(*/
+    /*  100% - clamp(3.125rem, 3.125rem + ((1vw - 0.48rem) * 17.4051), 10rem),*/
+    /*  840px*/
+    /*);*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    /*margin-bottom: clamp(*/
+    /*  3.875rem,*/
+    /*  3.875rem + ((1vw - 0.48rem) * 4.4304),*/
+    /*  5.625rem*/
+    /*);*/
+    /*visibility: visible;*/
   /*}*/
   .gm-links-carousel-images__heading {
     opacity: 0;
     visibility: hidden;
     transform: translateY(20px); /* Start slightly lower */
-    transition:
-      opacity 0.5s ease-out,
-      transform 0.5s ease-out,
-      visibility 0.5s;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out, visibility 0.5s;
   }
 
   .gm-links-carousel-images__heading.is-visible {
     max-width: min(
-      100% - clamp(3.125rem, 3.125rem + ((1vw - 0.48rem) * 17.4051), 10rem),
-      840px
+            100% - clamp(3.125rem, 3.125rem + ((1vw - 0.48rem) * 17.4051), 10rem),
+            840px
     );
     margin-left: auto;
     margin-right: auto;
     margin-bottom: clamp(
-      3.875rem,
-      3.875rem + ((1vw - 0.48rem) * 4.4304),
-      5.625rem
+            3.875rem,
+            3.875rem + ((1vw - 0.48rem) * 4.4304),
+            5.625rem
     );
     opacity: 1;
     visibility: visible;
