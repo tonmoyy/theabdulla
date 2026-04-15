@@ -2,12 +2,6 @@ import { Logo3 } from "../assets";
 import { business1 } from "../assets";
 import { useState } from "react";
 
-import { LogoAbdulla3 } from "../assets";
-
-
-// Import Swiper styles
-import "swiper/css";
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -226,8 +220,8 @@ const Navbar = () => {
           >
             <span style={{ display: "none" }}>link</span>
             <img
-              width={200}
-              height={100}
+              width={100}
+              height={36}
               src={Logo3}
               className="attachment-medium_large size-medium_large"
               alt="The Abdulla Capital"
@@ -244,8 +238,8 @@ const Navbar = () => {
                 id="menu-item-40"
                 className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40"
               >
-                <a href="#about-us" data-title="About Us">
-                  <span>About</span>
+                <a href="about-us/index.html" data-title="About Us">
+                  <span>About Us</span>
                   <svg
                     role="presentation"
                     width={18}
@@ -265,8 +259,11 @@ const Navbar = () => {
                     id="menu-item-41"
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"
                   >
-                    <a href="about/index.html#who-we-are" data-title="Vision">
-                      <span>Vision</span>
+                    <a
+                      href="about-us/index.html#who-we-are"
+                      data-title="Who We Are"
+                    >
+                      <span>Who We Are</span>
                     </a>
                   </li>
                   <li
@@ -274,10 +271,10 @@ const Navbar = () => {
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2635"
                   >
                     <a
-                      href="about/index.html#our-history"
-                      data-title="Investment Philosophy"
+                      href="about-us/index.html#our-history"
+                      data-title="Our History"
                     >
-                      <span> Disciplined Capital Allocation </span>
+                      <span>Our History</span>
                     </a>
                   </li>
                   <li
@@ -285,11 +282,21 @@ const Navbar = () => {
                     className="menu-item menu-item-type-custom menu-item-object-custom menu-item-42"
                   >
                     <a
-                      href="#leadership"
-                      data-title="Leadership
-"
+                      href="about-us/index.html#the-board"
+                      data-title="The Board"
                     >
-                      <span>Leadership</span>
+                      <span>The Board</span>
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-43"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-43"
+                  >
+                    <a
+                      href="about-us/index.html#our-leadership"
+                      data-title="Our People"
+                    >
+                      <span>Our People</span>
                     </a>
                   </li>
                   <li
@@ -303,11 +310,11 @@ const Navbar = () => {
                 </ul>
               </li>
               <li
-                id="menu-item-40"
-                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40"
+                id="menu-item-45"
+                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-45"
               >
-                <a href="platform/index.html" data-title="Platform">
-                  <span>Platform</span>
+                <a className="button" data-title="A True Partnership">
+                  <span>A True Partnership</span>
                   <svg
                     role="presentation"
                     width={18}
@@ -324,185 +331,107 @@ const Navbar = () => {
                 </a>
                 <ul className="sub-menu">
                   <li
-                    id="menu-item-41"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"
+                    id="menu-item-3185"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3185"
                   >
                     <a
-                      href="platform/index.html#investment"
-                      data-title="Investment"
+                      href="private-wealth-management/high-net-worth-individuals-and-families/index.html"
+                      data-title="Individuals & Families"
                     >
-                      <span>Investment</span>
+                      <span>Individuals &amp; Families</span>
                     </a>
                   </li>
                   <li
-                    id="menu-item-2635"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2635"
+                    id="menu-item-3186"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3186"
                   >
                     <a
-                      href="platform/index.html#advisory"
-                      data-title="Advisory"
+                      href="private-wealth-management/family-office-services/index.html"
+                      data-title="Family Office Services"
                     >
-                      <span>Advisory</span>
+                      <span>Family Office Services</span>
                     </a>
                   </li>
                   <li
-                    id="menu-item-42"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-42"
+                    id="menu-item-6075"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-6075"
                   >
-                    <a href="platform/index.html#Equity" data-title="Equity">
-                      <span>Equity </span>
+                    <a
+                      href="business-owners/index.html"
+                      data-title="Business Owners"
+                    >
+                      <span>Business Owners</span>
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-3187"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3187"
+                  >
+                    <a
+                      href="endowments-foundations/foundation-investment-management/index.html"
+                      data-title="Foundations"
+                    >
+                      <span>Foundations</span>
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-2278"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-2278"
+                  >
+                    <a
+                      href="sustainable-investing-overview/index.html"
+                      data-title="Sustainable Investing"
+                    >
+                      <span>Sustainable Investing</span>
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-3188"
+                    className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3188"
+                  >
+                    <a
+                      href="endowments-foundations/endowment-foundation-management/index.html"
+                      data-title="Endowments"
+                    >
+                      <span>Endowments</span>
+                    </a>
+                  </li>
+                  <li
+                    id="menu-item-51"
+                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-51"
+                  >
+                    <a
+                      className="js-open-modal"
+                      href="#"
+                      data-title="Financial Intermediaries"
+                      data-modal="#modal-financial-intermediaries"
+                    >
+                      <span>Financial Intermediaries</span>
                     </a>
                   </li>
                 </ul>
               </li>
-
               <li
-                id="menu-item-40"
-                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40"
+                id="menu-item-3378"
+                className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3378"
               >
-                <a href="investments/index.html" data-title="Investments">
-                  <span>Investments</span>
-                  <svg
-                    role="presentation"
-                    width={18}
-                    height={17}
-                    viewBox="0 0 18 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.9492 4.20421C14.0287 6.36232 10.9384 9.69296 8.96771 11.8484L8.86227 11.9648L8.75683 11.8484L5.25728 8.03577C4.38368 7.09073 2.63388 5.16821 1.77528 4.20421L1.88078 4.09041C4.86318 5.78831 7.42881 8.17116 9.81874 10.7003H7.90328C9.66812 8.79938 11.576 7.02574 13.6396 5.50661C14.3501 5.00841 15.0555 4.50471 15.8438 4.09041L15.9492 4.20421Z"
-                      fill="#003147"
-                    />
-                  </svg>
+                <a href="news-insights/index.html" data-title="News & Insights">
+                  <span>News &amp; Insights</span>
                 </a>
-                <ul className="sub-menu">
-                  <li
-                    id="menu-item-41"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"
-                  >
-                    <a
-                      href="investments/index.html#investment-focus"
-                      data-title="Investment Focus"
-                    >
-                      <span>Investment Focus</span>
-                    </a>
-                  </li>
-                  <li
-                    id="menu-item-2635"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2635"
-                  >
-                    <a
-                      href="investments/index.html#sector-coverage"
-                      data-title="Sector Coverage"
-                    >
-                      <span>Sector Coverage </span>
-                    </a>
-                  </li>
-                </ul>
               </li>
-
               <li
-                id="menu-item-40"
-                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40"
+                id="menu-item-57"
+                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-57"
               >
-                <a href="partnerships/index.html" data-title="Partnerships">
-                  <span>Partnerships</span>
-                  <svg
-                    role="presentation"
-                    width={18}
-                    height={17}
-                    viewBox="0 0 18 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.9492 4.20421C14.0287 6.36232 10.9384 9.69296 8.96771 11.8484L8.86227 11.9648L8.75683 11.8484L5.25728 8.03577C4.38368 7.09073 2.63388 5.16821 1.77528 4.20421L1.88078 4.09041C4.86318 5.78831 7.42881 8.17116 9.81874 10.7003H7.90328C9.66812 8.79938 11.576 7.02574 13.6396 5.50661C14.3501 5.00841 15.0555 4.50471 15.8438 4.09041L15.9492 4.20421Z"
-                      fill="#003147"
-                    />
-                  </svg>
+                <a
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="TheAbdullaCapital, open in new tab"
+                  href="https://www.TheAbdullaCapital.com/"
+                  data-title="TheAbdullaCapital"
+                >
+                  <span>TheAbdullaCapital</span>
                 </a>
-                <ul className="sub-menu">
-                  <li
-                    id="menu-item-41"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"
-                  >
-                    <a
-                      href="partnerships/index.html#who-we-partner-with"
-                      data-title="Who We Partner With"
-                    >
-                      <span>Who We Partner With</span>
-                    </a>
-                  </li>
-                  <li
-                    id="menu-item-2635"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2635"
-                  >
-                    <a
-                      href="partnerships/index.html#submit-opportunity"
-                      data-title="Submit Opportunity"
-                    >
-                      <span>Submit Opportunity</span>
-                    </a>
-                  </li>
-                </ul>
-              </li>
-
-              <li
-                id="menu-item-40"
-                className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40"
-              >
-                <a href="insights/index.html" data-title="Insights">
-                  <span>Insights</span>
-                  <svg
-                    role="presentation"
-                    width={18}
-                    height={17}
-                    viewBox="0 0 18 17"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M15.9492 4.20421C14.0287 6.36232 10.9384 9.69296 8.96771 11.8484L8.86227 11.9648L8.75683 11.8484L5.25728 8.03577C4.38368 7.09073 2.63388 5.16821 1.77528 4.20421L1.88078 4.09041C4.86318 5.78831 7.42881 8.17116 9.81874 10.7003H7.90328C9.66812 8.79938 11.576 7.02574 13.6396 5.50661C14.3501 5.00841 15.0555 4.50471 15.8438 4.09041L15.9492 4.20421Z"
-                      fill="#003147"
-                    />
-                  </svg>
-                </a>
-                <ul className="sub-menu">
-                  <li
-                    id="menu-item-41"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-41"
-                  >
-                    <a
-                      href="insights/index.html#market-outlook"
-                      data-title="Market Outlook"
-                    >
-                      <span>Market Outlook</span>
-                    </a>
-                  </li>
-                  <li
-                    id="menu-item-2635"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2635"
-                  >
-                    <a
-                      href="insights/index.html#investment-commentary"
-                      data-title="Investment Commentary"
-                    >
-                      <span>Investment Commentary</span>
-                    </a>
-                  </li>
-                  <li
-                    id="menu-item-2635"
-                    className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2635"
-                  >
-                    <a
-                      href="insights/index.html#strategic-research"
-                      data-title="Strategic Research"
-                    >
-                      <span>Strategic Research</span>
-                    </a>
-                  </li>
-                </ul>
               </li>
             </ul>
             <div className="gm-header__info">
@@ -619,7 +548,7 @@ const Navbar = () => {
             <ul id="menu-header-menu-1" className="gm-mobile-header__menu">
               <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-40 ">
                 <div className="menu-item-children">
-                  <a href="about/index.html">
+                  <a href="about-us/index.html">
                     <span>About Us</span>
                   </a>
                   {/*<button*/}
@@ -644,22 +573,22 @@ const Navbar = () => {
                 </div>
                 <ul className="sub-menu">
                   <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-41">
-                    <a href="about/index.html#who-we-are">
+                    <a href="about-us/index.html#who-we-are">
                       <span>Who We Are</span>
                     </a>
                   </li>
                   <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-2635">
-                    <a href="about/index.html#our-history">
+                    <a href="about-us/index.html#our-history">
                       <span>Our History</span>
                     </a>
                   </li>
                   <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-42">
-                    <a href="about/index.html#the-board">
+                    <a href="about-us/index.html#the-board">
                       <span>The Board</span>
                     </a>
                   </li>
                   <li className="menu-item menu-item-type-custom menu-item-object-custom menu-item-43">
-                    <a href="about/index.html#our-leadership">
+                    <a href="about-us/index.html#our-leadership">
                       <span>Our People</span>
                     </a>
                   </li>
@@ -829,32 +758,28 @@ const Navbar = () => {
                   style={{ position: "relative", display: "inline-block" }}
                   className="gm-home-page-hero__title-word gm-home-page-hero__title-word_1"
                 >
-                  Building
+                  An
                 </span>{" "}
                 <span
                   style={{ position: "relative", display: "inline-block" }}
                   className="gm-home-page-hero__title-word gm-home-page-hero__title-word_2"
                 >
-                  <em>Enduring Value </em>
+                  <em>unwavering focus</em>
                 </span>{" "}
                 <span
                   style={{ position: "relative", display: "inline-block" }}
-                  className="gm-home-page-hero__title-word "
+                  className="gm-home-page-hero__title-word gm-home-page-hero__title-word_1"
                 >
-                  Through Strategic
+                  on
                 </span>{" "}
-                <span
-                  style={{ position: "relative", display: "inline-block" }}
-                  className="gm-home-page-hero__title-word "
-                >
-                  Capital.
-                </span>
+                wealth and investment management
               </h1>
             </div>
             <div className="gm-home-page-hero__description">
               <p>
-                A private capital platform operating across investment
-                stewardship, strategic advisory and equity partnerships.
+                Our independent ownership, continuous innovation, and enduring
+                commitment to our clients have made us a trusted partner for
+                more than 65 years.
               </p>
             </div>
           </div>
@@ -874,8 +799,622 @@ const Navbar = () => {
             <div className="ln4" style={{ height: "100%" }}></div>
           </div>
         </section>
-
-        {/* <section
+        <section
+          id="gm-flexible-small-image-content-block_39347a86ddcd341afac95ff5a57bf6b6"
+          className="gm-flexible-small-image-content align-full gm-section-element gm-flexible-small-image-content_bg-sand-text-deepgrey-cta-drkblu"
+        >
+          <div className="gm-flexible-small-image-content__container gm-flexible-small-image-content__container_text-right">
+            <div className="gm-flexible-small-image-content__image">
+              <img
+                decoding="async"
+                width={469}
+                height={505}
+                src="#"
+                className="attachment-medium_large size-medium_large lazyload"
+                alt="A unique perspective of a building from below, showcasing architectural innovation."
+                sizes="(max-width: 469px) 100vw, 469px"
+                data-src="https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Rectangle-4517.jpg"
+                data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Rectangle-4517.jpg 469w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Rectangle-4517-279x300.jpg 279w"
+              />{" "}
+              <div className="gm-flexible-small-image-content__frame" />
+            </div>
+            <div className="gm-flexible-small-image-content__content">
+              <div className="gm-flexible-small-image-content__text gm-flexible-small-image-content__text_left">
+                <h2>Empowering Financial Futures.</h2>
+                <p>
+                  We believe every client is a universe of one. Our commitment
+                  to clients is guided by our values and driven by the pursuit
+                  of excellence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b"
+          className="gm-links-carousel-images align-full gm-section-element gm-links-carousel-images_bg-ltblu-text-deepgrey-cta-drkblu"
+        >
+          <div className="gm-links-carousel-images__heading">
+            <h2>
+              A Perfectly Positioned Boutique Wealth &amp; Investment Manager
+            </h2>
+            <p>
+              With a four-to-one client-to-employee ratio, we give each client
+              the undivided attention they deserve. Our optimal structure and
+              scale allow us to provide comprehensive, customized solutions.
+            </p>
+          </div>
+          <div className="gm-links-carousel-images__container">
+            <div className="gm-links-carousel-images__select-hover">
+              <div className="gm-links-carousel-images__select-hover-wrap">
+                <a
+                  href="private-wealth-management/high-net-worth-individuals-and-families/index.html"
+                  className="active"
+                  data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-individuals-families"
+                >
+                  Individuals &amp; Families{" "}
+                </a>
+                <a
+                  href="private-wealth-management/family-office-services/index.html"
+                  data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-family-office-services"
+                >
+                  Family Office Services{" "}
+                </a>
+                <a
+                  href="endowments-foundations/endowment-foundation-management/index.html"
+                  data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-endowments"
+                >
+                  Endowments{" "}
+                </a>
+                <a
+                  href="endowments-foundations/foundation-investment-management/index.html"
+                  data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-foundations"
+                >
+                  Foundations{" "}
+                </a>
+                <a
+                  href="https://www.TheAbdullaCapitalim.com/"
+                  className=" js-gm-disabled-link"
+                  data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-institutions-consultants"
+                >
+                  Institutions &amp; Consultants{" "}
+                </a>
+                <a
+                  href="https://www.TheAbdullaCapitalim.com/"
+                  className=" js-gm-disabled-link"
+                  data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-financial-advisors"
+                >
+                  Financial Advisors{" "}
+                </a>
+              </div>
+            </div>
+            <div className="gm-links-carousel-images__wrap">
+              <div
+                className="js-item gm-links-carousel-images__item active"
+                data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-individuals-families"
+              >
+                <button
+                  type="button"
+                  className="js-btn-mobile h5 gm-links-carousel-images__wrap-btn"
+                >
+                  Individuals &amp; Families{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={21}
+                    height={21}
+                    viewBox="0 0 21 21"
+                    fill="none"
+                  >
+                    <path
+                      d="M18.9986 6.93904C16.598 9.63672 12.7351 13.8 10.2717 16.4943L10.1399 16.6399L10.0081 16.4943L5.63371 11.7285C4.54167 10.5472 2.35446 8.14402 1.28125 6.93904L1.41305 6.79688C5.14104 8.91914 8.34812 11.8978 11.3355 15.0592H8.94121C11.1472 12.683 13.5322 10.466 16.1116 8.56712C16.9997 7.94432 17.8815 7.31475 18.8668 6.79687L18.9986 6.93904Z"
+                      fill="#1F292E"
+                    />
+                  </svg>
+                </button>
+                <div className="js-item-inner gm-links-carousel-images__item-inner">
+                  <div className="gm-links-carousel-images__item-content">
+                    <div className="gm-links-carousel-images__item-image">
+                      <div className="gm-links-carousel-images__item-image-wrap">
+                        <img
+                          decoding="async"
+                          width={1024}
+                          height={807}
+                          src="#"
+                          className="attachment-large size-large lazyload"
+                          alt="boots"
+                          sizes="(max-width: 1024px) 100vw, 1024px"
+                          data-src="https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-1024x807.jpg"
+                          data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-1024x807.jpg 1024w, https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-300x236.jpg 300w, https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-768x605.jpg 768w, https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-1536x1210.jpg 1536w, https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-2048x1613.jpg 2048w"
+                        />{" "}
+                      </div>
+                    </div>
+                    <div className="gm-links-carousel-images__item-info">
+                      <div className="gm-links-carousel-images__item-headline">
+                        <h2>
+                          Empowering your confident pursuit of purpose,
+                          passions, and legacy.
+                        </h2>
+                      </div>
+                      <div className="gm-links-carousel-images__item-btn">
+                        <a
+                          className="gm-btn gm-btn_blue"
+                          href="private-wealth-management/high-net-worth-individuals-and-families/index.html"
+                          aria-label="Learn More - Individuals & Families"
+                        >
+                          <span>Learn More – Individuals &amp; Families</span>
+                          <svg
+                            role="presentation"
+                            width={8}
+                            height={15}
+                            viewBox="0 0 8 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M0.115543 0.533203C2.30811 2.43012 5.69188 5.48255 7.8817 7.42906L8 7.5332L7.8817 7.63735L4.00825 11.094C3.04814 11.9569 1.09491 13.6852 0.115543 14.5332L-4.5523e-09 14.4291C1.7249 11.4833 4.1458 8.94907 6.71527 6.58846L6.71527 8.48042C4.78404 6.73724 2.98212 4.85272 1.43879 2.81446C0.932599 2.11273 0.420907 1.41595 -6.07407e-07 0.637347L0.115543 0.533203Z" />
+                          </svg>
+                        </a>{" "}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="js-item gm-links-carousel-images__item"
+                data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-family-office-services"
+              >
+                <button
+                  type="button"
+                  className="js-btn-mobile h5 gm-links-carousel-images__wrap-btn"
+                >
+                  Family Office Services{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={21}
+                    height={21}
+                    viewBox="0 0 21 21"
+                    fill="none"
+                  >
+                    <path
+                      d="M18.9986 6.93904C16.598 9.63672 12.7351 13.8 10.2717 16.4943L10.1399 16.6399L10.0081 16.4943L5.63371 11.7285C4.54167 10.5472 2.35446 8.14402 1.28125 6.93904L1.41305 6.79688C5.14104 8.91914 8.34812 11.8978 11.3355 15.0592H8.94121C11.1472 12.683 13.5322 10.466 16.1116 8.56712C16.9997 7.94432 17.8815 7.31475 18.8668 6.79687L18.9986 6.93904Z"
+                      fill="#1F292E"
+                    />
+                  </svg>
+                </button>
+                <div className="js-item-inner gm-links-carousel-images__item-inner">
+                  <div className="gm-links-carousel-images__item-content">
+                    <div className="gm-links-carousel-images__item-image">
+                      <div className="gm-links-carousel-images__item-image-wrap">
+                        <img
+                          loading="lazy"
+                          decoding="async"
+                          width={1024}
+                          height={628}
+                          src="#"
+                          className="attachment-large size-large lazyload"
+                          alt="a child on the shoulders of a man"
+                          sizes="auto, (max-width: 1024px) 100vw, 1024px"
+                          data-src="https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Family-office-1024x628.jpg"
+                          data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Family-office-1024x628.jpg 1024w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Family-office-300x184.jpg 300w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Family-office-768x471.jpg 768w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Family-office.jpg 1386w"
+                        />{" "}
+                      </div>
+                    </div>
+                    <div className="gm-links-carousel-images__item-info">
+                      <div className="gm-links-carousel-images__item-headline">
+                        <h2>
+                          Empowering your confident pursuit of purpose,
+                          passions, and legacy.
+                        </h2>
+                      </div>
+                      <div className="gm-links-carousel-images__item-btn">
+                        <a
+                          className="gm-btn gm-btn_blue"
+                          href="private-wealth-management/family-office-services/index.html"
+                          aria-label="Learn More - Family Office Services"
+                        >
+                          <span>Learn More – Family Office Services</span>
+                          <svg
+                            role="presentation"
+                            width={8}
+                            height={15}
+                            viewBox="0 0 8 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M0.115543 0.533203C2.30811 2.43012 5.69188 5.48255 7.8817 7.42906L8 7.5332L7.8817 7.63735L4.00825 11.094C3.04814 11.9569 1.09491 13.6852 0.115543 14.5332L-4.5523e-09 14.4291C1.7249 11.4833 4.1458 8.94907 6.71527 6.58846L6.71527 8.48042C4.78404 6.73724 2.98212 4.85272 1.43879 2.81446C0.932599 2.11273 0.420907 1.41595 -6.07407e-07 0.637347L0.115543 0.533203Z" />
+                          </svg>
+                        </a>{" "}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="js-item gm-links-carousel-images__item"
+                data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-endowments"
+              >
+                <button
+                  type="button"
+                  className="js-btn-mobile h5 gm-links-carousel-images__wrap-btn"
+                >
+                  Endowments{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={21}
+                    height={21}
+                    viewBox="0 0 21 21"
+                    fill="none"
+                  >
+                    <path
+                      d="M18.9986 6.93904C16.598 9.63672 12.7351 13.8 10.2717 16.4943L10.1399 16.6399L10.0081 16.4943L5.63371 11.7285C4.54167 10.5472 2.35446 8.14402 1.28125 6.93904L1.41305 6.79688C5.14104 8.91914 8.34812 11.8978 11.3355 15.0592H8.94121C11.1472 12.683 13.5322 10.466 16.1116 8.56712C16.9997 7.94432 17.8815 7.31475 18.8668 6.79687L18.9986 6.93904Z"
+                      fill="#1F292E"
+                    />
+                  </svg>
+                </button>
+                <div className="js-item-inner gm-links-carousel-images__item-inner">
+                  <div className="gm-links-carousel-images__item-content">
+                    <div className="gm-links-carousel-images__item-image">
+                      <div className="gm-links-carousel-images__item-image-wrap">
+                        <img
+                          loading="lazy"
+                          decoding="async"
+                          width={1000}
+                          height={667}
+                          src="#"
+                          className="attachment-large size-large lazyload"
+                          sizes="auto, (max-width: 1000px) 100vw, 1000px"
+                          data-src="https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/ENF_Meeting_Ppl_1_Banner.jpg"
+                          data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/ENF_Meeting_Ppl_1_Banner.jpg 1000w, https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/ENF_Meeting_Ppl_1_Banner-300x200.jpg 300w, https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/ENF_Meeting_Ppl_1_Banner-768x512.jpg 768w"
+                        />{" "}
+                      </div>
+                    </div>
+                    <div className="gm-links-carousel-images__item-info">
+                      <div className="gm-links-carousel-images__item-headline">
+                        <h2>
+                          Driven by your mission, focused on your success.
+                        </h2>
+                      </div>
+                      <div className="gm-links-carousel-images__item-btn">
+                        <a
+                          className="gm-btn gm-btn_blue"
+                          href="endowments-foundations/endowment-foundation-management/index.html"
+                          aria-label="Learn More - Endowments"
+                        >
+                          <span>Learn More – Endowments</span>
+                          <svg
+                            role="presentation"
+                            width={8}
+                            height={15}
+                            viewBox="0 0 8 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M0.115543 0.533203C2.30811 2.43012 5.69188 5.48255 7.8817 7.42906L8 7.5332L7.8817 7.63735L4.00825 11.094C3.04814 11.9569 1.09491 13.6852 0.115543 14.5332L-4.5523e-09 14.4291C1.7249 11.4833 4.1458 8.94907 6.71527 6.58846L6.71527 8.48042C4.78404 6.73724 2.98212 4.85272 1.43879 2.81446C0.932599 2.11273 0.420907 1.41595 -6.07407e-07 0.637347L0.115543 0.533203Z" />
+                          </svg>
+                        </a>{" "}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="js-item gm-links-carousel-images__item"
+                data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-foundations"
+              >
+                <button
+                  type="button"
+                  className="js-btn-mobile h5 gm-links-carousel-images__wrap-btn"
+                >
+                  Foundations{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={21}
+                    height={21}
+                    viewBox="0 0 21 21"
+                    fill="none"
+                  >
+                    <path
+                      d="M18.9986 6.93904C16.598 9.63672 12.7351 13.8 10.2717 16.4943L10.1399 16.6399L10.0081 16.4943L5.63371 11.7285C4.54167 10.5472 2.35446 8.14402 1.28125 6.93904L1.41305 6.79688C5.14104 8.91914 8.34812 11.8978 11.3355 15.0592H8.94121C11.1472 12.683 13.5322 10.466 16.1116 8.56712C16.9997 7.94432 17.8815 7.31475 18.8668 6.79687L18.9986 6.93904Z"
+                      fill="#1F292E"
+                    />
+                  </svg>
+                </button>
+                <div className="js-item-inner gm-links-carousel-images__item-inner">
+                  <div className="gm-links-carousel-images__item-content">
+                    <div className="gm-links-carousel-images__item-image">
+                      <div className="gm-links-carousel-images__item-image-wrap">
+                        <img
+                          loading="lazy"
+                          decoding="async"
+                          width={1024}
+                          height={643}
+                          src="#"
+                          className="attachment-large size-large lazyload"
+                          alt="a circular fountain with people around it"
+                          sizes="auto, (max-width: 1024px) 100vw, 1024px"
+                          data-src="https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Foundations-1024x643.jpg"
+                          data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Foundations-1024x643.jpg 1024w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Foundations-300x188.jpg 300w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Foundations-768x482.jpg 768w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Foundations.jpg 1386w"
+                        />{" "}
+                      </div>
+                    </div>
+                    <div className="gm-links-carousel-images__item-info">
+                      <div className="gm-links-carousel-images__item-headline">
+                        <h2>
+                          Driven by your mission, focused on your success.
+                        </h2>
+                      </div>
+                      <div className="gm-links-carousel-images__item-btn">
+                        <a
+                          className="gm-btn gm-btn_blue"
+                          href="endowments-foundations/foundation-investment-management/index.html"
+                          aria-label="Learn More - Foundations"
+                        >
+                          <span>Learn More – Foundations</span>
+                          <svg
+                            role="presentation"
+                            width={8}
+                            height={15}
+                            viewBox="0 0 8 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M0.115543 0.533203C2.30811 2.43012 5.69188 5.48255 7.8817 7.42906L8 7.5332L7.8817 7.63735L4.00825 11.094C3.04814 11.9569 1.09491 13.6852 0.115543 14.5332L-4.5523e-09 14.4291C1.7249 11.4833 4.1458 8.94907 6.71527 6.58846L6.71527 8.48042C4.78404 6.73724 2.98212 4.85272 1.43879 2.81446C0.932599 2.11273 0.420907 1.41595 -6.07407e-07 0.637347L0.115543 0.533203Z" />
+                          </svg>
+                        </a>{" "}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="js-item gm-links-carousel-images__item"
+                data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-institutions-consultants"
+              >
+                <button
+                  type="button"
+                  className="js-btn-mobile h5 gm-links-carousel-images__wrap-btn"
+                >
+                  Institutions &amp; Consultants{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={21}
+                    height={21}
+                    viewBox="0 0 21 21"
+                    fill="none"
+                  >
+                    <path
+                      d="M18.9986 6.93904C16.598 9.63672 12.7351 13.8 10.2717 16.4943L10.1399 16.6399L10.0081 16.4943L5.63371 11.7285C4.54167 10.5472 2.35446 8.14402 1.28125 6.93904L1.41305 6.79688C5.14104 8.91914 8.34812 11.8978 11.3355 15.0592H8.94121C11.1472 12.683 13.5322 10.466 16.1116 8.56712C16.9997 7.94432 17.8815 7.31475 18.8668 6.79687L18.9986 6.93904Z"
+                      fill="#1F292E"
+                    />
+                  </svg>
+                </button>
+                <div className="js-item-inner gm-links-carousel-images__item-inner">
+                  <div className="gm-links-carousel-images__item-content">
+                    <div className="gm-links-carousel-images__item-image">
+                      <div className="gm-links-carousel-images__item-image-wrap">
+                        <img
+                          loading="lazy"
+                          decoding="async"
+                          width={1024}
+                          height={449}
+                          src="#"
+                          className="attachment-large size-large lazyload"
+                          alt="A unique curved building with a mesmerizing circular pattern on its exterior."
+                          sizes="auto, (max-width: 1024px) 100vw, 1024px"
+                          data-src="https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/gimhero-1024x449.jpg"
+                          data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/gimhero-1024x449.jpg 1024w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/gimhero-300x131.jpg 300w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/gimhero-768x337.jpg 768w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/gimhero-1536x673.jpg 1536w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/gimhero-2048x897.jpg 2048w"
+                        />{" "}
+                      </div>
+                    </div>
+                    <div className="gm-links-carousel-images__item-info">
+                      <div className="gm-links-carousel-images__item-headline">
+                        <h2>Aligned. Consistent. Transparent.</h2>
+                      </div>
+                      <div className="gm-links-carousel-images__item-btn">
+                        <button
+                          data-btn="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-5"
+                          className="gm-btn js-open-modal gm-btn_orange"
+                          aria-label="Learn More - Institutions & Consultants"
+                        >
+                          <span>
+                            Learn More – Institutions &amp; Consultants
+                          </span>
+                          <svg
+                            role="presentation"
+                            width={8}
+                            height={15}
+                            viewBox="0 0 8 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M0.115543 0.533203C2.30811 2.43012 5.69188 5.48255 7.8817 7.42906L8 7.5332L7.8817 7.63735L4.00825 11.094C3.04814 11.9569 1.09491 13.6852 0.115543 14.5332L-4.5523e-09 14.4291C1.7249 11.4833 4.1458 8.94907 6.71527 6.58846L6.71527 8.48042C4.78404 6.73724 2.98212 4.85272 1.43879 2.81446C0.932599 2.11273 0.420907 1.41595 -6.07407e-07 0.637347L0.115543 0.533203Z" />
+                          </svg>
+                        </button>{" "}
+                      </div>
+                      <div
+                        className="js-modal gm-links-carousel-images__modal"
+                        data-modal="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-5"
+                      >
+                        <div className="js-close-modal gm-links-carousel-images__modal-overlay" />
+                        <div className="gm-links-carousel-images__modal-content">
+                          <button
+                            className="js-close-modal gm-links-carousel-images__modal-close"
+                            aria-label="close modal"
+                          >
+                            <span style={{ display: "none" }}>modal-close</span>
+                            <svg
+                              role="presentation"
+                              width={40}
+                              height={40}
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M2 2C9.14661 6.53726 15.346 12.1266 21.3334 18.0204C27.2385 23.9966 32.8396 30.1962 37.3726 37.3381C30.2263 32.8121 24.0212 27.217 18.0392 21.3177C12.1396 15.336 6.54422 9.14218 2 2Z"
+                                fill="#003147"
+                              />
+                              <path
+                                d="M36.5147 2.82227C32.3207 9.75555 27.027 15.6891 21.4182 21.3957C15.7228 27.0159 9.78889 32.3208 2.85938 36.5104C7.04217 29.5768 12.3413 23.6377 17.9559 17.9369C23.6571 12.3225 29.5855 7.02308 36.5147 2.82227Z"
+                                fill="#003147"
+                              />
+                            </svg>
+                          </button>
+                          <div className="gm-links-carousel-images__modal-inner">
+                            <p className="gm-links-carousel-images__modal-text">
+                              You will now be redirected to TheAbdullaCapital
+                              Investment Management.{" "}
+                            </p>
+                            <a
+                              className="gm-btn gm-btn_orange"
+                              href="https://www.TheAbdullaCapitalim.com/"
+                              target="_blank"
+                              aria-label="Visit TheAbdullaCapitalIM.com, open in new tab"
+                            >
+                              <span>Visit TheAbdullaCapitalIM.com</span>
+                              <svg
+                                role="presentation"
+                                width={8}
+                                height={15}
+                                viewBox="0 0 8 15"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path d="M0.115543 0.533203C2.30811 2.43012 5.69188 5.48255 7.8817 7.42906L8 7.5332L7.8817 7.63735L4.00825 11.094C3.04814 11.9569 1.09491 13.6852 0.115543 14.5332L-4.5523e-09 14.4291C1.7249 11.4833 4.1458 8.94907 6.71527 6.58846L6.71527 8.48042C4.78404 6.73724 2.98212 4.85272 1.43879 2.81446C0.932599 2.11273 0.420907 1.41595 -6.07407e-07 0.637347L0.115543 0.533203Z" />
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="js-item gm-links-carousel-images__item"
+                data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-financial-advisors"
+              >
+                <button
+                  type="button"
+                  className="js-btn-mobile h5 gm-links-carousel-images__wrap-btn"
+                >
+                  Financial Advisors{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={21}
+                    height={21}
+                    viewBox="0 0 21 21"
+                    fill="none"
+                  >
+                    <path
+                      d="M18.9986 6.93904C16.598 9.63672 12.7351 13.8 10.2717 16.4943L10.1399 16.6399L10.0081 16.4943L5.63371 11.7285C4.54167 10.5472 2.35446 8.14402 1.28125 6.93904L1.41305 6.79688C5.14104 8.91914 8.34812 11.8978 11.3355 15.0592H8.94121C11.1472 12.683 13.5322 10.466 16.1116 8.56712C16.9997 7.94432 17.8815 7.31475 18.8668 6.79687L18.9986 6.93904Z"
+                      fill="#1F292E"
+                    />
+                  </svg>
+                </button>
+                <div className="js-item-inner gm-links-carousel-images__item-inner">
+                  <div className="gm-links-carousel-images__item-content">
+                    <div className="gm-links-carousel-images__item-image">
+                      <div className="gm-links-carousel-images__item-image-wrap">
+                        <img
+                          loading="lazy"
+                          decoding="async"
+                          width={1024}
+                          height={449}
+                          src="#"
+                          className="attachment-large size-large lazyload"
+                          alt="A unique curved building with a mesmerizing circular pattern on its exterior."
+                          sizes="auto, (max-width: 1024px) 100vw, 1024px"
+                          data-src="https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/gimhero-1024x449.jpg"
+                          data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/gimhero-1024x449.jpg 1024w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/gimhero-300x131.jpg 300w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/gimhero-768x337.jpg 768w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/gimhero-1536x673.jpg 1536w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/gimhero-2048x897.jpg 2048w"
+                        />{" "}
+                      </div>
+                    </div>
+                    <div className="gm-links-carousel-images__item-info">
+                      <div className="gm-links-carousel-images__item-headline">
+                        <h2>Aligned. Consistent. Transparent.</h2>
+                      </div>
+                      <div className="gm-links-carousel-images__item-btn">
+                        <button
+                          data-btn="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-6"
+                          className="gm-btn js-open-modal gm-btn_orange"
+                          aria-label="Learn More - Financial Advisors"
+                        >
+                          <span>Learn More – Financial Advisors</span>
+                          <svg
+                            role="presentation"
+                            width={8}
+                            height={15}
+                            viewBox="0 0 8 15"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path d="M0.115543 0.533203C2.30811 2.43012 5.69188 5.48255 7.8817 7.42906L8 7.5332L7.8817 7.63735L4.00825 11.094C3.04814 11.9569 1.09491 13.6852 0.115543 14.5332L-4.5523e-09 14.4291C1.7249 11.4833 4.1458 8.94907 6.71527 6.58846L6.71527 8.48042C4.78404 6.73724 2.98212 4.85272 1.43879 2.81446C0.932599 2.11273 0.420907 1.41595 -6.07407e-07 0.637347L0.115543 0.533203Z" />
+                          </svg>
+                        </button>{" "}
+                      </div>
+                      <div
+                        className="js-modal gm-links-carousel-images__modal"
+                        data-modal="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-6"
+                      >
+                        <div className="js-close-modal gm-links-carousel-images__modal-overlay" />
+                        <div className="gm-links-carousel-images__modal-content">
+                          <button
+                            className="js-close-modal gm-links-carousel-images__modal-close"
+                            aria-label="close modal"
+                          >
+                            <span style={{ display: "none" }}>modal-close</span>
+                            <svg
+                              role="presentation"
+                              width={40}
+                              height={40}
+                              viewBox="0 0 40 40"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M2 2C9.14661 6.53726 15.346 12.1266 21.3334 18.0204C27.2385 23.9966 32.8396 30.1962 37.3726 37.3381C30.2263 32.8121 24.0212 27.217 18.0392 21.3177C12.1396 15.336 6.54422 9.14218 2 2Z"
+                                fill="#003147"
+                              />
+                              <path
+                                d="M36.5147 2.82227C32.3207 9.75555 27.027 15.6891 21.4182 21.3957C15.7228 27.0159 9.78889 32.3208 2.85938 36.5104C7.04217 29.5768 12.3413 23.6377 17.9559 17.9369C23.6571 12.3225 29.5855 7.02308 36.5147 2.82227Z"
+                                fill="#003147"
+                              />
+                            </svg>
+                          </button>
+                          <div className="gm-links-carousel-images__modal-inner">
+                            <p className="gm-links-carousel-images__modal-text">
+                              You will now be redirected to TheAbdullaCapital
+                              Investment Management.{" "}
+                            </p>
+                            <a
+                              className="gm-btn gm-btn_orange"
+                              href="https://www.TheAbdullaCapitalim.com/"
+                              target="_blank"
+                              aria-label="Visit TheAbdullaCapitalIM.com, open in new tab"
+                            >
+                              <span>Visit TheAbdullaCapitalIM.com</span>
+                              <svg
+                                role="presentation"
+                                width={8}
+                                height={15}
+                                viewBox="0 0 8 15"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path d="M0.115543 0.533203C2.30811 2.43012 5.69188 5.48255 7.8817 7.42906L8 7.5332L7.8817 7.63735L4.00825 11.094C3.04814 11.9569 1.09491 13.6852 0.115543 14.5332L-4.5523e-09 14.4291C1.7249 11.4833 4.1458 8.94907 6.71527 6.58846L6.71527 8.48042C4.78404 6.73724 2.98212 4.85272 1.43879 2.81446C0.932599 2.11273 0.420907 1.41595 -6.07407e-07 0.637347L0.115543 0.533203Z" />
+                              </svg>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
           id="gm-stats-block_f0468cc129d273e33415ff312019231b"
           className="gm-stats align-full gm-section-element gm-stats_right"
           style={{}}
@@ -893,7 +1432,7 @@ const Navbar = () => {
               <div className="gm-stats__btn">
                 <a
                   className="gm-btn gm-btn_blue"
-                  href="about/index.html"
+                  href="about-us/index.html"
                   aria-label="About Us"
                 >
                   <span>About Us</span>
@@ -972,13 +1511,13 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
         <section
           id="gm-large-image-content-block_1b6498d13d83223a58dc225af99065de"
           className="gm-large-image-content align-full gm-section-element gm-large-image-content_right  large-image-content--off-white"
           style={{ backgroundColor: "var(--wp--preset--color--off-white)" }}
         >
-          {/* <div className="gm-large-image-content__container">
+          <div className="gm-large-image-content__container">
             <div className="gm-large-image-content__media">
               <div className="gm-large-image-content__media-wrap">
                 <img
@@ -1027,14 +1566,14 @@ const Navbar = () => {
                 </svg>
               </a>{" "}
             </div>
-          </div> */}
+          </div>
         </section>
         <section
           id="gm-large-image-content-block_a819995c7bc9e518d9b4abbd62a8b51a"
           className="gm-large-image-content align-full gm-section-element gm-large-image-content_left  large-image-content--off-white"
           style={{ backgroundColor: "var(--wp--preset--color--off-white)" }}
         >
-          {/* <div className="gm-large-image-content__container">
+          <div className="gm-large-image-content__container">
             <div className="gm-large-image-content__media">
               <div className="gm-large-image-content__media-wrap">
                 <img
@@ -1083,10 +1622,129 @@ const Navbar = () => {
                 </svg>
               </a>{" "}
             </div>
-          </div> */}
+          </div>
         </section>
-
-        {/* <section
+        <section
+          id="gm-featured-content-2up-block_2bb816a3bcb5f0724d91cdf79c16aff1"
+          className="gm-featured-content-2up align-full gm-section-element gm-featured-content-2up_ow-top-dg-text-sand-bottom"
+        >
+          <div className="gm-featured-content-2up__header">
+            <div className="gm-featured-content-2up__header-container">
+              <h2 className="h3 gm-featured-content-2up__header-title">
+                Featured News &amp; Insights{" "}
+              </h2>
+            </div>
+          </div>
+          <div>
+            <div
+              className="gm-featured-content-2up__content js-content"
+              data-posts-id="gm-featured-content-2up-block_2bb816a3bcb5f0724d91cdf79c16aff1-news"
+            >
+              <div className="gm-featured-content-2up__row">
+                <a
+                  href="uncategorized/new-florida-regional-director/index.html"
+                  className="gm-featured-content-2up__item"
+                >
+                  <span className="gm-featured-content-2up__item-img">
+                    <img
+                      loading="lazy"
+                      decoding="async"
+                      width={853}
+                      height={1024}
+                      src="#"
+                      className="attachment-large size-large lazyload"
+                      alt="Greg Khost headshot"
+                      sizes="auto, (max-width: 853px) 100vw, 853px"
+                      data-src="https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/Joe-Coconate_crop-853x1024.jpg"
+                      data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/Joe-Coconate_crop-853x1024.jpg 853w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/Joe-Coconate_crop-250x300.jpg 250w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/Joe-Coconate_crop-768x921.jpg 768w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/Joe-Coconate_crop.jpg 936w"
+                    />{" "}
+                  </span>
+                  <span className="gm-featured-content-2up__item-date">
+                    January 09, 2026{" "}
+                  </span>
+                  <h3 className="h5">New Florida Regional Director</h3>
+                  <span className="gm-featured-content-2up__item-excerpt">
+                    TheAbdullaCapital Appoints Joe Coconate as Florida Regional
+                    Director Experienced Wealth Management Leader to Drive
+                    Firm’s Growth Across Florida Palm Beach, FL (January 9,
+                    2026) – TheAbdullaCapital, a …{" "}
+                  </span>
+                  <button className="gm-btn" aria-label="Read more">
+                    <span>Read more</span>
+                    <svg
+                      role="presentation"
+                      width={8}
+                      height={15}
+                      viewBox="0 0 8 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0.115543 0.533203C2.30811 2.43012 5.69188 5.48255 7.8817 7.42906L8 7.5332L7.8817 7.63735L4.00825 11.094C3.04814 11.9569 1.09491 13.6852 0.115543 14.5332L-4.5523e-09 14.4291C1.7249 11.4833 4.1458 8.94907 6.71527 6.58846L6.71527 8.48042C4.78404 6.73724 2.98212 4.85272 1.43879 2.81446C0.932599 2.11273 0.420907 1.41595 -6.07407e-07 0.637347L0.115543 0.533203Z" />
+                    </svg>
+                  </button>{" "}
+                </a>
+                <a
+                  href="news-TheAbdullaCapital/bloomberg-the-close-15/index.html"
+                  className="gm-featured-content-2up__item"
+                >
+                  <span className="gm-featured-content-2up__item-img">
+                    <img
+                      loading="lazy"
+                      decoding="async"
+                      width={1024}
+                      height={576}
+                      src="#"
+                      className="attachment-large size-large lazyload"
+                      alt="Jason Pride: Bloomberg The Close"
+                      sizes="auto, (max-width: 1024px) 100vw, 1024px"
+                      data-src="https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/thumb-13-1024x576.jpg"
+                      data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/thumb-13-1024x576.jpg 1024w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/thumb-13-300x169.jpg 300w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/thumb-13-768x432.jpg 768w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/thumb-13-1536x864.jpg 1536w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/thumb-13.jpg 1920w"
+                    />{" "}
+                  </span>
+                  <span className="gm-featured-content-2up__item-date">
+                    January 26, 2026{" "}
+                  </span>
+                  <h3 className="h5">Bloomberg The Close</h3>
+                  <span className="gm-featured-content-2up__item-excerpt"></span>
+                  <button className="gm-btn" aria-label="Read more">
+                    <span>Read more</span>
+                    <svg
+                      role="presentation"
+                      width={8}
+                      height={15}
+                      viewBox="0 0 8 15"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M0.115543 0.533203C2.30811 2.43012 5.69188 5.48255 7.8817 7.42906L8 7.5332L7.8817 7.63735L4.00825 11.094C3.04814 11.9569 1.09491 13.6852 0.115543 14.5332L-4.5523e-09 14.4291C1.7249 11.4833 4.1458 8.94907 6.71527 6.58846L6.71527 8.48042C4.78404 6.73724 2.98212 4.85272 1.43879 2.81446C0.932599 2.11273 0.420907 1.41595 -6.07407e-07 0.637347L0.115543 0.533203Z" />
+                    </svg>
+                  </button>{" "}
+                </a>
+              </div>
+              <div className="gm-featured-content-2up__btn">
+                <a
+                  className="gm-btn gm-btn_blue"
+                  href="news-insights/index.html#news"
+                  aria-label="View all news"
+                  role="button"
+                >
+                  <span>View all news</span>
+                  <svg
+                    role="presentation"
+                    width={8}
+                    height={15}
+                    viewBox="0 0 8 15"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M0.115543 0.533203C2.30811 2.43012 5.69188 5.48255 7.8817 7.42906L8 7.5332L7.8817 7.63735L4.00825 11.094C3.04814 11.9569 1.09491 13.6852 0.115543 14.5332L-4.5523e-09 14.4291C1.7249 11.4833 4.1458 8.94907 6.71527 6.58846L6.71527 8.48042C4.78404 6.73724 2.98212 4.85272 1.43879 2.81446C0.932599 2.11273 0.420907 1.41595 -6.07407e-07 0.637347L0.115543 0.533203Z" />
+                  </svg>
+                </a>{" "}
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
           id="gm-logos-showcase-block_d98cadc90e387afb184310514a5942bf"
           className="gm-logos-showcase align-full gm-section-element gm-logos-showcase_ow-top-dg-text-sand-bottom "
         >
@@ -1103,7 +1761,7 @@ const Navbar = () => {
                       decoding="async"
                       width={212}
                       height={142}
-                      src={dfm}
+                      src="#"
                       className="attachment-medium size-medium lazyload"
                       alt="Associated Press"
                       data-src="wp-content/uploads/2024/11/Associated_Press_logo-copy.png"
@@ -1143,7 +1801,7 @@ const Navbar = () => {
                       decoding="async"
                       width={212}
                       height={142}
-                      src={CNN_International_logo}
+                      src="#"
                       className="attachment-medium size-medium lazyload"
                       data-src="wp-content/uploads/2024/11/CNN_logo-copy.png"
                     />{" "}
@@ -1208,7 +1866,7 @@ const Navbar = () => {
                       decoding="async"
                       width={214}
                       height={142}
-                      src={cnbc}
+                      src="#"
                       className="attachment-medium size-medium lazyload"
                       data-src="wp-content/uploads/2024/10/Frame-427320548.png"
                     />{" "}
@@ -1308,9 +1966,238 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
+        <section
+          id="gm-background-image-block_1409607484f4a7c9e6d38b42bb827d55"
+          className="gm-background-image align-full gm-section-element gm-background-image_text-left-cta-right"
+          style={{}}
+          data-width={1920}
+          data-height={1920}
+        >
+          <div
+            className="gm-background-image__overlay"
+            style={{ opacity: "0.7" }}
+          />
+          <div className="gm-background-image__container">
+            <div className="gm-background-image__content">
+              <h2>
+                We’re <em>here to help</em>
+              </h2>
+              <p>Get to know our team and how we can partner with you.</p>
+            </div>
+            <div className="gm-background-image__btn">
+              <a
+                className="gm-btn gm-btn_orange"
+                href="contact-us/index.html"
+                aria-label="Contact Us"
+              >
+                <span>Contact Us</span>
+                <svg
+                  role="presentation"
+                  width={8}
+                  height={15}
+                  viewBox="0 0 8 15"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M0.115543 0.533203C2.30811 2.43012 5.69188 5.48255 7.8817 7.42906L8 7.5332L7.8817 7.63735L4.00825 11.094C3.04814 11.9569 1.09491 13.6852 0.115543 14.5332L-4.5523e-09 14.4291C1.7249 11.4833 4.1458 8.94907 6.71527 6.58846L6.71527 8.48042C4.78404 6.73724 2.98212 4.85272 1.43879 2.81446C0.932599 2.11273 0.420907 1.41595 -6.07407e-07 0.637347L0.115543 0.533203Z" />
+                </svg>
+              </a>{" "}
+            </div>
+          </div>
+        </section>
       </main>
-
+      <footer className="gm-footer">
+        <div className="gm-footer__container gm-container-wide">
+          <div className="gm-footer__logo-col">
+            <a
+              href="index.html"
+              className="gm-footer__logo"
+              aria-label="link to the home page"
+            >
+              <span style={{ display: "none" }}>link to the main page</span>
+              <img
+                width={237}
+                height={41}
+                src="wp-content/uploads/2023/06/light-logo.svg"
+                className="attachment-medium_large size-medium_large"
+                alt="TheAbdullaCapital"
+                decoding="async"
+                loading="lazy"
+              />{" "}
+            </a>
+          </div>
+          <div className="gm-footer__nav-col">
+            <div
+              className="gm-footer__nav"
+              role="navigation"
+              aria-label="footer navigation 1"
+            >
+              <div className="gm-footer__nav-title">Company</div>
+              <ul id="menu-company" className="gm-footer__menu">
+                <li
+                  id="menu-item-22"
+                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-22"
+                >
+                  <a href="about-us/index.html" data-title="About Us">
+                    <span>About Us</span>
+                  </a>
+                </li>
+                <li
+                  id="menu-item-23"
+                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-23"
+                >
+                  <a href="careers/index.html" data-title="Careers">
+                    <span>Careers</span>
+                  </a>
+                </li>
+                <li
+                  id="menu-item-6095"
+                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-6095"
+                >
+                  <a
+                    href="inclusion/index.html"
+                    data-title="Inclusion & Community"
+                  >
+                    <span>Inclusion &amp; Community</span>
+                  </a>
+                </li>
+                <li
+                  id="menu-item-24"
+                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-24"
+                >
+                  <a
+                    href="contact-us/index.html#locations"
+                    data-title="Locations"
+                  >
+                    <span>Locations</span>
+                  </a>
+                </li>
+                <li
+                  id="menu-item-26"
+                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-26"
+                >
+                  <a href="contact-us/index.html" data-title="Contact Us">
+                    <span>Contact Us</span>
+                  </a>
+                </li>
+              </ul>{" "}
+            </div>
+            <div
+              className="gm-footer__nav"
+              role="navigation"
+              aria-label="footer navigation 2"
+            >
+              <div className="gm-footer__nav-title">Services</div>
+              <ul id="menu-services" className="gm-footer__menu">
+                <li
+                  id="menu-item-3209"
+                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3209"
+                >
+                  <a
+                    href="private-wealth-management/index.html"
+                    data-title="Private Wealth"
+                  >
+                    <span>Private Wealth</span>
+                  </a>
+                </li>
+                <li
+                  id="menu-item-3210"
+                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3210"
+                >
+                  <a
+                    href="endowments-foundations/index.html"
+                    data-title="Endowments & Foundations"
+                  >
+                    <span>Endowments &amp; Foundations</span>
+                  </a>
+                </li>
+                <li
+                  id="menu-item-29"
+                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-29"
+                >
+                  <a
+                    className="js-open-modal"
+                    href="https://www.TheAbdullaCapitalim.com/"
+                    data-title="TheAbdullaCapital Investment Management"
+                    data-modal="#modal-TheAbdullaCapital-investment-management"
+                  >
+                    <span>TheAbdullaCapital Investment Management</span>
+                  </a>
+                </li>
+                <li
+                  id="menu-item-3211"
+                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3211"
+                >
+                  <a
+                    href="sustainable-investing-overview/index.html"
+                    data-title="Sustainable Investing"
+                  >
+                    <span>Sustainable Investing</span>
+                  </a>
+                </li>
+              </ul>{" "}
+            </div>
+            <div
+              className="gm-footer__nav"
+              role="navigation"
+              aria-label="footer navigation 3"
+            >
+              <div className="gm-footer__nav-title">Legal</div>
+              <ul id="menu-legal" className="gm-footer__menu">
+                <li
+                  id="menu-item-31"
+                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-31"
+                >
+                  <a href="terms-of-use/index.html" data-title="Terms of Use">
+                    <span>Terms of Use</span>
+                  </a>
+                </li>
+                <li
+                  id="menu-item-32"
+                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-32"
+                >
+                  <a
+                    href="privacy-policy/index.html"
+                    data-title="Privacy Policy"
+                  >
+                    <span>Privacy Policy</span>
+                  </a>
+                </li>
+                <li
+                  id="menu-item-33"
+                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-33"
+                >
+                  <a href="disclosures/index.html" data-title="Disclosures">
+                    <span>Disclosures</span>
+                  </a>
+                </li>
+                <li
+                  id="menu-item-3865"
+                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-3865"
+                >
+                  <a href="accessibility/index.html" data-title="Accessibility">
+                    <span>Accessibility</span>
+                  </a>
+                </li>
+                <li
+                  id="ot-sdk-btn"
+                  className="ot-sdk-show-settings menu-item menu-item-type-custom menu-item-object-custom menu-item-4716"
+                >
+                  <a href="#" role="button" data-title="Cookie Settings">
+                    <span>Cookie Settings</span>
+                  </a>
+                </li>
+              </ul>{" "}
+            </div>
+          </div>
+        </div>
+        <div className="gm-footer__copyright">
+          <div className="gm-footer__copyright-container gm-container-wide">
+            <span>© 2026 TheAbdullaCapital. All rights reserved. </span>
+          </div>
+        </div>
+      </footer>
       <button
         className="gm-form-post-open"
         data-remodal-target="gm-form-post-modal"
@@ -1399,9 +2286,9 @@ const Navbar = () => {
             />
           </svg>
         </button>
-        {/* <div className="gm-form-post__header">
+        <div className="gm-form-post__header">
           <h4 className="gm-form-post__title">Contact Us</h4>
-        </div> */}
+        </div>
         <div className="gm-form-post__form"></div>
         <div className="js-popup-focus-trap" tabIndex={0} />
       </div>
