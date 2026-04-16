@@ -9,13 +9,14 @@ import { invphil1 } from "../assets";
 import {motion} from "framer-motion";
 
 const About = () => {
+
     const frameStyle = {
         padding: '10px',
         border: '5px solid #333',
         backgroundColor: '#fff',
         boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
         display: 'inline-block',
-        borderRadius: '8px'
+        borderRadius: '0px'
     };
     const [isVisible, setIsVisible] = useState(false);
     const domRef = useRef();
@@ -732,7 +733,7 @@ const About = () => {
                           viewport={{ once: true, amount: 0.3 }}
                   // exit={{ opacity: 0 }}
                           transition={{ duration: 0.5 }}>
-                  <h1 className="text-center font-extrabold py-8"> Leadership</h1>
+
               </motion.div>
                   <motion.div
                       className="leadership-container"
