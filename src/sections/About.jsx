@@ -728,23 +728,36 @@ const About = () => {
               id="leadership"
               className="gm-featured-content-2up gm-section-element gm-featured-content-2up_ow-top-dg-text-sand-bottom"
           >
-              <motion.div initial={{ opacity: 0 }}
-                          whileInView={{ opacity: 1 }}
-                          viewport={{ once: true, amount: 0.3 }}
-                  // exit={{ opacity: 0 }}
-                          transition={{ duration: 0.5 }}>
-
-              </motion.div>
-                  <motion.div
-                      className="leadership-container"
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      viewport={{ once: true, amount: 0.3 }}
-                      // exit={{ opacity: 0 }}
-                      transition={{ duration: 0.5 }}
+              <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.5 }}
+              />
+              <motion.div
+                  className="leadership-container"
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.5 }}
+                  style={{
+                      display: "flex",
+                      flexWrap: "wrap",
+                      gap: "2rem",
+                      alignItems: "center",
+                      maxWidth: "1200px",
+                      margin: "0 auto",
+                      padding: "0 1rem",
+                  }}
+              >
+                  {/* Left Side: Image */}
+                  <div
+                      style={{
+                          flex: "1 1 300px",
+                          minWidth: 0, // Prevents overflow
+                          overflow: "hidden",
+                      }}
                   >
-                      {/* Left Side: Image */}
-                      <div style={frameStyle}>
                       <motion.div
                           className="image-side"
                           initial={{ x: -100, opacity: 0 }}
@@ -752,27 +765,39 @@ const About = () => {
                           viewport={{ once: true, amount: 0.3 }}
                           transition={{ delay: 0.2, duration: 0.6 }}
                       >
-                          <img src={leadershipData.imageUrl} alt={leadershipData.name} />
+                          <img
+                              src={leadershipData.imageUrl}
+                              alt={leadershipData.name}
+                              style={{
+                                  width: "100%",
+                                  height: "auto",
+                                  display: "block",
+                                  objectFit: "cover",
+                                  borderRadius: "8px", // Optional
+                              }}
+                          />
                       </motion.div>
+                  </div>
+
+                  {/* Right Side: Description */}
+                  <motion.div
+                      className="description-side"
+                      initial={{ x: 100, opacity: 0 }}
+                      whileInView={{ x: 0, opacity: 1 }}
+                      viewport={{ once: true, amount: 0.3 }}
+                      transition={{ delay: 0.2, duration: 0.6 }}
+                      style={{
+                          flex: "1 1 300px",
+                          minWidth: 0,
+                      }}
+                  >
+                      <div className="text-content">
+                          <h1 className="name">{leadershipData.name}</h1>
+                          <p className="description">{leadershipData.description}</p>
+                          <button className="cta-button">Read Full Bio</button>
                       </div>
-
-                      {/* Right Side: Description */}
-                      <motion.div
-                          className="description-side"
-                          initial={{ x: 100, opacity: 0 }}
-                          whileInView={{ x: 0, opacity: 1 }}
-                          viewport={{ once: true, amount: 0.3 }}
-                          transition={{ delay: 0.2, duration: 0.6 }}
-                      >
-                          <div className="text-content">
-                              <h1 className="name">{leadershipData.name}</h1>
-                              {/*<h3 className="title">{leadershipData.title}</h3>*/}
-                              <p className="description">{leadershipData.description}</p>
-                              <button className="cta-button">Read Full Bio</button>
-                          </div>
-                      </motion.div>
                   </motion.div>
-
+              </motion.div>
           </section>
           <section>
               <div className="bg-gray-50 text-gray-900">
