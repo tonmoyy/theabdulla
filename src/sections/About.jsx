@@ -6,7 +6,18 @@ import {visionBackground} from "../assets";
 
 import { invphil1 } from "../assets";
 
+import {motion} from "framer-motion";
+
 const About = () => {
+
+    const frameStyle = {
+        padding: '10px',
+        border: '5px solid #333',
+        backgroundColor: '#fff',
+        boxShadow: '0 4px 8px rgba(0,0,0,0.2)',
+        display: 'inline-block',
+        borderRadius: '0px'
+    };
     const [isVisible, setIsVisible] = useState(false);
     const domRef = useRef();
     const createObserver1 = (setState) => new IntersectionObserver(
@@ -48,7 +59,7 @@ const About = () => {
                 }
             });
         },
-        { threshold: 0.6 }
+        { threshold: 0.99 }
     );
 
     useEffect(() => {
@@ -82,109 +93,116 @@ const About = () => {
         maxWidth: '800px',
     };
 
-    return (
-      <div>
-          <section
-              id="about-us"
-              className="gm-flexible-small-image-content align-full gm-section-element gm-flexible-small-image-content_bg-sand-text-deepgrey-cta-drkblu"
-          >
-              <div
-                  ref={domRef1}
-                  className={`gm-flexible-small-image-content__container gm-flexible-small-image-content__container_text-right ${isVisible1 ? 'is-visible' : ''}`}>
-                  <div className="gm-flexible-small-image-content__image">
-                      <img
-                          decoding="async"
-                          width={469}
-                          height={505}
-                          src={AS}
-                          className="attachment-medium_large size-medium_large lazyload"
-                          alt="A unique perspective of a building from below, showcasing architectural innovation."
-                          sizes="(max-width: 469px) 100vw, 469px"
-                          data-src="https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Rectangle-4517.jpg"
-                          data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Rectangle-4517.jpg 469w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Rectangle-4517-279x300.jpg 279w"
-                      />{" "}
-                      <div className="gm-flexible-small-image-content__frame" />
-                  </div>
-                  <div className="gm-flexible-small-image-content__content">
-                      <div
+    const leadershipData = {
+        name: "Abdulla Salem",
+        // title: "Chief Executive Officer",
+        description: "Abdulla Salem Entrepreneur, investor, and strategic operator building ventures across the sports and investment ecosystem.",
+        imageUrl: Abdulla1 // Replace with actual image path
+    };
 
-                          className="gm-flexible-small-image-content__text">
-                          <h2> A Multi-Disciplinary Capital Platform</h2>
-                          <p>
-                              Abdulla Capital operates at the intersection of private
-                              investment, strategic advisory and equity participation. The
-                              platform is designed to preserve capital, assess opportunity
-                              and create enduring value across sectors, markets and
-                              long-term partnerships. .
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </section>
-          <section
-              id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b"
-              className="gm-links-carousel-images align-full gm-section-element gm-links-carousel-images_bg-ltblu-text-deepgrey-cta-drkblu"
-          >
-              <div
-                  ref={domRef}
-                  className={`gm-links-carousel-images__heading ${isVisible ? 'is-visible' : ''}`}>
-                  <h2> Disciplined Capital Allocation</h2>
-                  <p>
-                      We operate with a disciplined investment framework rooted in
-                      governance, long-term thinking, and strategic alignment. We
-                      prioritise sustainable value over short-term gains.
-                  </p>
-              </div>
-              <div className="gm-links-carousel-images__container">
-                  <div className="gm-links-carousel-images__select-hover">
-                      <div className="gm-links-carousel-images__select-hover-wrap">
-                          <a
-                              href="private-wealth-management/high-net-worth-individuals-and-families/index.html"
-                              className="active"
-                              data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-individuals-families"
-                          >
-                              Long-term investment mindset
-                          </a>
-                          <a
-                              href="private-wealth-management/family-office-services/index.html"
-                              data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-family-office-services"
-                          >
-                              Governance-driven decision making
-                          </a>
-                          <a
-                              href="endowments-foundations/endowment-foundation-management/index.html"
-                              data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-endowments"
-                          >
-                              Strategic partnerships over speculation
-                          </a>
-                          <a
-                              href="endowments-foundations/foundation-investment-management/index.html"
-                              data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-foundations"
-                          >
-                              Focus on sustainable value creation
-                          </a>
-                          {/* <a
+    return (
+        <div>
+            <section
+                id="about-us"
+                className="gm-flexible-small-image-content align-full gm-section-element gm-flexible-small-image-content_bg-sand-text-deepgrey-cta-drkblu"
+            >
+                <div
+                    ref={domRef1}
+                    className={`gm-flexible-small-image-content__container gm-flexible-small-image-content__container_text-right ${isVisible1 ? 'is-visible' : ''}`}>
+                    <div className="gm-flexible-small-image-content__image">
+                        <img
+                            decoding="async"
+                            width={469}
+                            height={505}
+                            src={AS}
+                            className="attachment-medium_large size-medium_large lazyload"
+                            alt="A unique perspective of a building from below, showcasing architectural innovation."
+                            sizes="(max-width: 469px) 100vw, 469px"
+                            data-src="https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Rectangle-4517.jpg"
+                            data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Rectangle-4517.jpg 469w, https://www.TheAbdullaCapital.com/wp-content/uploads/2023/08/Rectangle-4517-279x300.jpg 279w"
+                        />{" "}
+                        <div className="gm-flexible-small-image-content__frame" />
+                    </div>
+                    <div className="gm-flexible-small-image-content__content">
+                        <div
+
+                            className="gm-flexible-small-image-content__text">
+                            <h2> A Multi-Disciplinary Capital Platform</h2>
+                            <p>
+                                Abdulla Capital operates at the intersection of private
+                                investment, strategic advisory and equity participation. The
+                                platform is designed to preserve capital, assess opportunity
+                                and create enduring value across sectors, markets and
+                                long-term partnerships. .
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section
+                id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b"
+                className="gm-links-carousel-images align-full gm-section-element gm-links-carousel-images_bg-ltblu-text-deepgrey-cta-drkblu"
+            >
+                <div
+                    ref={domRef}
+                    className={`gm-links-carousel-images__heading ${isVisible ? 'is-visible' : ''}`}>
+                    <h2> Disciplined Capital Allocation</h2>
+                    <p>
+                        We operate with a disciplined investment framework rooted in
+                        governance, long-term thinking, and strategic alignment. We
+                        prioritise sustainable value over short-term gains.
+                    </p>
+                </div>
+                <div className="gm-links-carousel-images__container">
+                    <div className="gm-links-carousel-images__select-hover">
+                        <div className="gm-links-carousel-images__select-hover-wrap">
+                            <a
+                                href="private-wealth-management/high-net-worth-individuals-and-families/index.html"
+                                className="active"
+                                data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-individuals-families"
+                            >
+                                Long-term investment mindset
+                            </a>
+                            <a
+                                href="private-wealth-management/family-office-services/index.html"
+                                data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-family-office-services"
+                            >
+                                Governance-driven decision making
+                            </a>
+                            <a
+                                href="endowments-foundations/endowment-foundation-management/index.html"
+                                data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-endowments"
+                            >
+                                Strategic partnerships over speculation
+                            </a>
+                            <a
+                                href="endowments-foundations/foundation-investment-management/index.html"
+                                data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-foundations"
+                            >
+                                Focus on sustainable value creation
+                            </a>
+                            {/* <a
                   href="https://www.TheAbdullaCapitalim.com/"
                   className=" js-gm-disabled-link"
                   data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-institutions-consultants"
                 >
                   Institutions &amp; Consultants{" "}
                 </a> */}
-                          {/* <a
+                            {/* <a
                   href="https://www.TheAbdullaCapitalim.com/"
                   className=" js-gm-disabled-link"
                   data-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-financial-advisors"
                 >
                   Financial Advisors{" "}
                 </a> */}
-                      </div>
-                  </div>
-                  <div className="gm-links-carousel-images__wrap">
-                      <div
-                          className="js-item gm-links-carousel-images__item active"
-                          data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-individuals-families"
-                      >
-                          {/* <button
+                        </div>
+                    </div>
+                    <div className="gm-links-carousel-images__wrap">
+                        <div
+                            className="js-item gm-links-carousel-images__item active"
+                            data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-individuals-families"
+                        >
+                            {/* <button
                   type="button"
                   className="js-btn-mobile h5 gm-links-carousel-images__wrap-btn"
                 >
@@ -202,24 +220,24 @@ const About = () => {
                     />
                   </svg>
                 </button> */}
-                          <div className="js-item-inner gm-links-carousel-images__item-inner">
-                              <div className="gm-links-carousel-images__item-content">
-                                  <div className="gm-links-carousel-images__item-image">
-                                      <div className="gm-links-carousel-images__item-image-wrap">
-                                          <img
-                                              decoding="async"
-                                              width={1024}
-                                              height={807}
-                                              src={invphil1}
-                                              className="attachment-large size-large lazyload"
-                                              alt="boots"
-                                              sizes="(max-width: 1024px) 100vw, 1024px"
-                                              data-src="https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-1024x807.jpg"
-                                              data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-1024x807.jpg 1024w, https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-300x236.jpg 300w, https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-768x605.jpg 768w, https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-1536x1210.jpg 1536w, https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-2048x1613.jpg 2048w"
-                                          />{" "}
-                                      </div>
-                                  </div>
-                                  {/* <div className="gm-links-carousel-images__item-info">
+                            <div className="js-item-inner gm-links-carousel-images__item-inner">
+                                <div className="gm-links-carousel-images__item-content">
+                                    <div className="gm-links-carousel-images__item-image">
+                                        <div className="gm-links-carousel-images__item-image-wrap">
+                                            <img
+                                                decoding="async"
+                                                width={1024}
+                                                height={807}
+                                                src={invphil1}
+                                                className="attachment-large size-large lazyload"
+                                                alt="boots"
+                                                sizes="(max-width: 1024px) 100vw, 1024px"
+                                                data-src="https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-1024x807.jpg"
+                                                data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-1024x807.jpg 1024w, https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-300x236.jpg 300w, https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-768x605.jpg 768w, https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-1536x1210.jpg 1536w, https://www.TheAbdullaCapital.com/wp-content/uploads/2025/12/GettyImages-1302325775-2048x1613.jpg 2048w"
+                                            />{" "}
+                                        </div>
+                                    </div>
+                                    {/* <div className="gm-links-carousel-images__item-info">
                       <div className="gm-links-carousel-images__item-headline">
                         <h2>
                           Empowering your confident pursuit of purpose,
@@ -246,10 +264,10 @@ const About = () => {
                         </a>{" "}
                       </div>
                     </div> */}
-                              </div>
-                          </div>
-                      </div>
-                      {/* <div
+                                </div>
+                            </div>
+                        </div>
+                        {/* <div
                 className="js-item gm-links-carousel-images__item"
                 data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-family-office-services"
               >
@@ -319,7 +337,7 @@ const About = () => {
                   </div>
                 </div>
               </div> */}
-                      {/* <div
+                        {/* <div
                 className="js-item gm-links-carousel-images__item"
                 data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-endowments"
               >
@@ -387,7 +405,7 @@ const About = () => {
                   </div>
                 </div>
               </div> */}
-                      {/* <div
+                        {/* <div
                 className="js-item gm-links-carousel-images__item"
                 data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-foundations"
               >
@@ -456,7 +474,7 @@ const About = () => {
                   </div>
                 </div>
               </div> */}
-                      {/* <div
+                        {/* <div
                 className="js-item gm-links-carousel-images__item"
                 data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-institutions-consultants"
               >
@@ -580,7 +598,7 @@ const About = () => {
                   </div>
                 </div>
               </div> */}
-                      {/* <div
+                        {/* <div
                 className="js-item gm-links-carousel-images__item"
                 data-item-id="gm-links-carousel-images-block_90c699bbddfa7a18f235fdaa3e69ef4b-financial-advisors"
               >
@@ -702,93 +720,84 @@ const About = () => {
                   </div>
                 </div>
               </div> */}
-                  </div>
-              </div>
-          </section>
+                    </div>
+                </div>
+            </section>
 
-          <section
-              id="leadership"
-              className="gm-featured-content-2up gm-section-element gm-featured-content-2up_ow-top-dg-text-sand-bottom"
-          >
-              <div className="gm-featured-content-2up__header text-center">
-                  <h2 className="h3 gm-featured-content-2up__header-title">
-                      Leadership
-                  </h2>
-              </div>
-              <div>
-                  <div
-                      className="gm-featured-content-2up__content js-content"
-                      data-posts-id="gm-featured-content-2up-block_2bb816a3bcb5f0724d91cdf79c16aff1-news"
-                  >
-                      <div className="gm-featured-content-2up__row">
-                          <a
-                              href="uncategorized/new-florida-regional-director/index.html"
-                              className="gm-featured-content-2up__item"
-                          >
-                  <span className="gm-featured-content-2up__item-img">
-                    <img
-                        loading="lazy"
-                        decoding="async"
-                        width={400}
-                        height={762}
-                        src={Abdulla1}
-                        className="attachment-large size-large lazyload"
-                        alt="Greg Khost headshot"
-                        //   sizes="auto, (max-width: 853px) 100vw, 853px"
-                        data-src="https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/Joe-Coconate_crop-853x1024.jpg"
-                        data-srcset="https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/Joe-Coconate_crop-853x1024.jpg 853w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/Joe-Coconate_crop-250x300.jpg 250w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/Joe-Coconate_crop-768x921.jpg 768w, https://www.TheAbdullaCapital.com/wp-content/uploads/2026/01/Joe-Coconate_crop.jpg 936w"
-                    />{" "}
-                  </span>
-                              <span className="gm-featured-content-2up__item-date"></span>
-                              <h3 className="h5">Abdulla Salem </h3>
-                              <span className="gm-featured-content-2up__item-excerpt">
-                    Abdulla Salem Entrepreneur, investor, and strategic operator
-                    building ventures across the sports and investment
-                    ecosystem.
-                  </span>
-                              <button className="gm-btn" aria-label="Read more">
-                                  <span>Read more</span>
-                                  <svg
-                                      role="presentation"
-                                      width={8}
-                                      height={15}
-                                      viewBox="0 0 8 15"
-                                      fill="none"
-                                      xmlns="http://www.w3.org/2000/svg"
-                                  >
-                                      <path d="M0.115543 0.533203C2.30811 2.43012 5.69188 5.48255 7.8817 7.42906L8 7.5332L7.8817 7.63735L4.00825 11.094C3.04814 11.9569 1.09491 13.6852 0.115543 14.5332L-4.5523e-09 14.4291C1.7249 11.4833 4.1458 8.94907 6.71527 6.58846L6.71527 8.48042C4.78404 6.73724 2.98212 4.85272 1.43879 2.81446C0.932599 2.11273 0.420907 1.41595 -6.07407e-07 0.637347L0.115543 0.533203Z" />
-                                  </svg>
-                              </button>{" "}
-                          </a>
+            <section
+                id="leadership"
+                className="gm-featured-content-2up gm-section-element gm-featured-content-2up_ow-top-dg-text-sand-bottom"
+            >
+                <motion.div initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true, amount: 0.3 }}
+                    // exit={{ opacity: 0 }}
+                            transition={{ duration: 0.5 }}>
 
-                      </div>
-                  </div>
-              </div>
-          </section>
-          <section>
-              <div className="bg-gray-50 text-gray-900">
-                  {/* Hero Section */}
-                  {/*<div className="bg-blue-600 text-white py-20 px-6 text-center">*/}
-                  {/*    <h1 className="text-5xl font-extrabold mb-4">Our Vision</h1>*/}
-                  {/*    <p className="text-xl max-w-2xl mx-auto opacity-90">*/}
-                  {/*        Shaping the future of digital innovation by empowering businesses to reach their full potential.*/}
-                  {/*    </p>*/}
-                  {/*</div>*/}
+                </motion.div>
+                <motion.div
+                    className="leadership-container"
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{ once: true, amount: 0.3 }}
+                    // exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
+                    {/* Left Side: Image */}
+                    <div style={frameStyle}>
+                        <motion.div
+                            className="image-side"
+                            initial={{ x: -100, opacity: 0 }}
+                            whileInView={{ x: 0, opacity: 1 }}
+                            viewport={{ once: true, amount: 0.3 }}
+                            transition={{ delay: 0.2, duration: 0.6 }}
+                        >
+                            <img src={leadershipData.imageUrl} alt={leadershipData.name} />
+                        </motion.div>
+                    </div>
 
-                  {/* Vision Statement Section */}
-                  <div className="max-w-7xl mx-auto px-6 py-16 >" style={pageStyle}>
-                      <div  style={textContainerStyle} className="flex flex-col">
-                          <div className="text-center">
-                              <h2 className="text-4xl font-bold text-white">Our Vision</h2>
-                              <p className="mt-4 text-lg text-olive-300 max-w-3xl mx-auto">
-                                  To build a capital platform that combines stewardship, strategic intelligence, and long-term partnerships across global markets.
-                              </p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </section>
-      </div>
+                    {/* Right Side: Description */}
+                    <motion.div
+                        className="description-side"
+                        initial={{ x: 100, opacity: 0 }}
+                        whileInView={{ x: 0, opacity: 1 }}
+                        viewport={{ once: true, amount: 0.3 }}
+                        transition={{ delay: 0.2, duration: 0.6 }}
+                    >
+                        <div className="text-content">
+                            <h1 className="name">{leadershipData.name}</h1>
+                            {/*<h3 className="title">{leadershipData.title}</h3>*/}
+                            <p className="description">{leadershipData.description}</p>
+                            <button className="cta-button">Read Full Bio</button>
+                        </div>
+                    </motion.div>
+                </motion.div>
+
+            </section>
+            <section>
+                <div className="bg-gray-50 text-gray-900">
+                    {/* Hero Section */}
+                    {/*<div className="bg-blue-600 text-white py-20 px-6 text-center">*/}
+                    {/*    <h1 className="text-5xl font-extrabold mb-4">Our Vision</h1>*/}
+                    {/*    <p className="text-xl max-w-2xl mx-auto opacity-90">*/}
+                    {/*        Shaping the future of digital innovation by empowering businesses to reach their full potential.*/}
+                    {/*    </p>*/}
+                    {/*</div>*/}
+
+                    {/* Vision Statement Section */}
+                    <div className="max-w-7xl mx-auto px-6 py-16 >" style={pageStyle}>
+                        <div  style={textContainerStyle} className="flex flex-col">
+                            <div className="text-center">
+                                <h2 className="text-4xl font-bold text-white">Our Vision</h2>
+                                <p className="mt-4 text-lg text-olive-300 max-w-3xl mx-auto">
+                                    To build a capital platform that combines stewardship, strategic intelligence, and long-term partnerships across global markets.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
     );
 };
 
